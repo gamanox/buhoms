@@ -17,7 +17,7 @@ script:
   - npm run build
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive -m "This site is being hosted from the development branch."
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive --project buho-beta-dev -m "This site is being hosted from the development branch."
   - npm run clean
 
 notifications:
