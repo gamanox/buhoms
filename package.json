@@ -2,7 +2,7 @@
   "name": "buho",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://buho-265003.web.app/",
+  "homepage": "https://buho-beta-dev.web.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -31,11 +31,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "clean": "rm -rf node_modules build",
+    "clean": "rm -rf node_modules build .firebase",
     "reinstall": "npm run clean && npm install",
     "build": "react-scripts build && firebase deploy  -m 'Deploying the best new feature ever.'",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
