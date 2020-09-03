@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-# OWL Proyect
+# BUHO Proyect
 
 ## World-class communication solutions.
 
@@ -8,7 +8,7 @@ We help from entrepreneurs with startUps, to brands with national presence and g
 
 <p align="center">
   <a href="https://buho-beta-dev.web.app/">
-    <img alt="Gatsby" src="https://travis-ci.com/JosafatCMtz/owl-proyect.svg?token=9BK9x8ofjfqhZ9kBE6Eh&branch=develop" width="50%" />
+    <img alt="Gatsby" src="https://travis-ci.com/JosafatCMtz/buho.svg?token=9BK9x8ofjfqhZ9kBE6Eh&branch=develop" width="50%" />
   </a>
 </p>
 <h1 align="center">
