@@ -1,0 +1,250 @@
+@font-face
+    font-family: "Graphik"
+    src: url("../../assets/fonts/Graphik/Graphik-Regular.otf") format("opentype")
+
+$white: #FFFFFF
+$black: #000000
+
+$font-graphik:  Graphik
+
+.titulo-afuera
+    font-family: $font-graphik
+    font-style: normal
+    font-weight: 500
+    font-size: 70px
+    line-height: 70px
+
+.content_top_section
+    position: absolute
+    top: calc(50% - 400px)
+    left: calc(50% - 350px)
+    width: 700px
+    text-align: center
+    height: 100px
+
+.content_top_section .title
+    font-family: $font-graphik
+    font-style: normal
+    font-weight: 500
+    font-size: 110px
+    line-height: 110px
+    color: $white
+    margin: 0
+
+.content_top_section .parrafo
+    font-family: $font-graphik
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 125%
+    color: $white
+
+.col-left
+    float: left
+    width: 100px
+
+.col-right
+    width: 100px
+    float: right
+
+.col-center
+    margin-left: 120px
+    margin-right: 120px
+
+@mixin linear-gradient($direction, $color-stops...)
+    background: nth(nth($color-stops, 1), 1)
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
+    background: linear-gradient($direction, $color-stops)
+
+.cell_bk_gradiente
+    width: 100%
+    height: 100%
+    position: absolute
+    mix-blend-mode: multiply
+    opacity: 0.9
+    transition(opacity, 1s)
+
+.cell_bk1
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/img/pages/landing/Buho_somos02.png")
+
+.cell_bk1_grad
+    background-image: linear-gradient(192.75deg, rgba(0, 255, 0, 0.9) 46.88%, rgba(3, 254, 215, 0.9) 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk1_gradiente:hover
+    background-image: linear-gradient(192.75deg, rgba(0, 255, 0, 0.9) 46.88%, rgba(3, 254, 215, 0.9) 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk2
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/img/pages/landing/Buho_DesignBck.png")
+
+.cell_bk2_grad
+    background-image: linear-gradient(192.75deg, #00FFEA 52.6%, #2B31FF 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk2_gradiente:hover
+    background-image: linear-gradient(192.75deg, #00FFEA 52.6%, #2B31FF 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk3
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/img/pages/landing/Buho_PrintBck-2.png")
+
+.cell_bk3_grad
+    background-image: linear-gradient(192.75deg, #FF0054 52.6%, #4200FF 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk3_gradiente:hover
+    background-image: linear-gradient(192.75deg, #FF0054 52.6%, #4200FF 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk4
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/img/pages/landing/Buho_LogisticsBck.png")
+
+.cell_bk4_grad
+    background-image: linear-gradient(191.17deg, #FFF000 52.6%, #FF2E00 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+
+.cell_bk4_gradiente:hover
+    background-image: linear-gradient(191.17deg, #FFF000 52.6%, #FF2E00 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+.cell_bk5
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/img/pages/landing/Buho_PickBck.png")
+
+.cell_bk5_grad
+    background-image: linear-gradient(191.17deg, #A31BFF 52.6%, #2B31FF 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+
+.cell_bk5_gradiente:hover
+    background-image: linear-gradient(191.17deg, #A31BFF 52.6%, #2B31FF 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+
+.cell_bk6
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/img/pages/landing/Productos.png")
+
+.cell_bk6_grad
+    background-image: linear-gradient(191.17deg, #0047FF 56.77%, #00FF47 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+
+.cell_bk6_gradiente:hover
+    background-image: linear-gradient(191.17deg, #0047FF 56.77%, #00FF47 100%)
+    mix-blend-mode: multiply
+    opacity: 0.9
+
+.container-player, .video-react
+    position: absolute
+    min-width: 100%
+    min-height: 100%
+    width: auto !important
+    height: 100% !important
+
+.video-react-poster
+    background-size: cover !important
+
+.video-react-video
+    object-fit: cover
+
+.video-react-button
+    display: none !important
+
+.video-react-big-play-button
+    display: none !important
+
+.video-react-loading-spinner
+    display: none !important
+
+@mixin transition($x...)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-transition: $x
+    -moz-transition: $x
+    -ms-transition: $x
+    -o-transition: $x
+    transition: $x
+
+.scene_solutions
+    background-image: url(../../assets/img/scene_solutions.png)
+    @include transition(background-image 0.5s ease-in-out)
+
+.scene_diseno
+    background-image: url(../../assets/img/scene_diseno.png)
+    @include transition(background-image 0.5s ease-in-out)
+
+$primary-color: #333
+
+.position-fixed
+    position: fixed
+
+    // TranslateY
+// generic transform
+
+$black: rgba(0, 0, 0, 0.2)
+
+@mixin animateHoverFirst($color, $amt: 1%)
+    &:hover,
+    &:active
+        background-color: darken($color, $amt)
+
+.ejemplo0
+    @include animateHoverFirst($black)
+
+@mixin animateHover($color, $amt: 1%)
+    .jumbotron
+        .container
+            transition: 0.5s
+            transform: translateY(-50px)
+    &:hover,
+    &:active
+        background-color: darken($color, $amt)
+        .jumbotron
+            .container
+                transition: 0.5s
+                transform: translateY(-150px)
+
+.ejemplo
+    @include animateHover($black)
+
+.details h1
+    color: $white
+//No lo estoy usando
+.module-container
+    width: calc(100% - 3rem)
+    background-color: $primary-color
+
+@media only screen and (max-width: 560px)
+    .titulo-afuera
+        font-family: $font-graphik
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        line-height: 30px
+
+    .content_top_section
+        position: absolute
+        top: calc(50% - 400px)
+        left: calc(50% - 200px)
+        width: 700px
+        text-align: center
+        height: 100px
+
+    .content_top_section .title
+        font-family: $font-graphik
+        font-style: normal
+        font-weight: 500
+        font-size: 12vh
+        line-height: 12vh
+        color: $white
+        margin: 0
+
+    .content_top_section .parrafo
+        font-family: $font-graphik
+        font-style: normal
+        font-weight: normal
+        font-size: 3vh
+        line-height: 3vh
+        color: $white

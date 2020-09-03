@@ -1,0 +1,90 @@
+{
+    "home": {
+      "navigation": [
+        {
+          "titulo": "Búho Solutions: Expertos trabajando con expertos.",
+          "bk_img": "scene_solutions"
+        },
+        {
+          "titulo": "Impresión",
+          "subtitulo": "Lorem ipsum dolor sit amet consectetur. ES",
+          "texto": "Lorem ipsum dolor sit amet consectetur. ES",
+          "textoBtn": "Es  Go somewhere -> 1",
+          "bk_img": "scene_diseno"
+        },
+        {
+          "titulo": "Diseño",
+          "subtitulo": "Lorem ipsum dolor sit amet consectetur. ES",
+          "texto": "Lorem ipsum dolor sit amet consectetur. ES",
+          "textoBtn": "Es  Go somewhere -> 2",
+          "bk_img": "scene_solutions"
+        },
+        {
+          "titulo": "Logística",
+          "subtitulo": "Lorem ipsum dolor sit amet consectetur.ES",
+          "texto": "Lorem ipsum dolor sit amet consectetur. ES",
+          "textoBtn": "Es  Go somewhere -> 3",
+          "bk_img": "scene_diseno"
+        }
+      ]
+    },
+    "SomosBuho": {
+      "section1": {
+        
+          "titulo": "Búho: Soluciones de comunicación de clase mundial.",
+          "parrafo": "Ayudamos desde emprendedores con startUps, hasta marcas con presencia nacional y alcance mundial a ser competitivas en un mundo hambriento de consistencia, ‘uniqueness’ y mejores experiencias."
+        
+      },
+      "section2": [
+        {
+          "titulo": "Marcando la diferencia desde 2012",
+          "parrafo": "Somos una empresa que se involucra a fondo en cada proyecto, con cada marca, de la mano de cada experto, brindando satisfacción garantizada en:"
+        },
+        {
+          "titulo1": "Atención y servicio a cliente",
+          "titulo2": "Calidad en materiales y precio",
+          "titulo3": "Logística & seguimiento",
+          "titulo4": "Entregas puntuales",
+          "titulo5": "Soluciones a la medida"
+        }
+      ],
+      "section3": [
+        {
+          "titulo": "Lo que hacemos",
+          "parrafo": "Nuestro proceso indaga las necesidades y objetivos reales de nuestros clientes ofreciendo soluciones a la medida en:"
+        },
+        {
+          "titulo1": "Diseño & Innovación",
+          "titulo2": "Impresión",
+          "titulo3": "Pick & Pack",
+          "titulo4": "Logística",
+          "titulo5": "Productos"
+        },
+        {
+          "pregunta1": "¿Cómo lo hacemos?",
+          "texto1": "Creemos en un principio muy simple: una marca deja de ser invisible cuando se vuelve útil.  Por esta razón, nos enfocamos en el momento de la decisión de compra y trabajamos con nuestros clientes para diseñar mensajes claros; producir materiales a medida e incluir la logística en el proceso creativo  de nuestras campañas.",
+          "pregunta2": "Somos parte del cambio",
+          "texto2": "Utilizamos materiales biodegradables como tintas a base de látex y papel reciclado en nuestras impresiones. Además contamos con certificación de Print Releaf; una plataforma para la reforestación global automatizada."
+        }
+      ],
+      "section4": [
+        {
+          "subtitulo": "Conoce todos nuestros servicios"
+        }
+      ]
+    },
+    "Formulario":{
+      "titulo": "Queremos saber de tí.",
+      "ubicacion": "Argentina #205 Industrial Martel de Santa Catarina, 66367 Santa Catarina, Nuevo León, México.",
+      "numero": "+52 (81) 1160 4200",
+      "email": "hola@buhoms.com",
+      "titulo2": "Cuéntanos sobre tu proyecto.",
+      "campo1": "Cómo te llamas?",
+      "campo2": "Cúal es tu correo?",
+      "campo3": "Cúal es tu empresa / organización?",
+      "campo4":"De qué se trata tu proyecto?",
+      "boton":"Enviar"
+    },
+    "greeting_ejemplo": "Hi!"
+  }
+  
