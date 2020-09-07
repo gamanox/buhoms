@@ -1,5 +1,5 @@
 import { initReactI18next } from "react-i18next";
-import i18n from 'i18next';
+import i18n from "i18next";
 
 import common_es from "../lang/es.json";
 import common_en from "../lang/en.json";
@@ -7,10 +7,10 @@ import common_en from "../lang/en.json";
 // the translations
 const resources = {
   es: {
-    translation: common_es
+    translation: common_es,
   },
   en: {
-    translation: common_en
+    translation: common_en,
   },
 };
 
@@ -21,8 +21,8 @@ i18n
     lng: "es",
     fallbackLng: "es",
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
   });
 
-  export default i18n;
+export default i18n;

@@ -33,6 +33,55 @@
       }
     ]
   },
+  "print": {
+    "header": {
+      "title": "Materializando la inspiración.",
+      "description": "Elegimos sólo los mejores materiales y sistemas de impresión para lograr un equilibrio óptimo entre belleza y utilidad."
+    },
+    "sub-header": {
+      "title": "Nuestro objetivo:",
+      "description": "Aumentar la visibilidad y resultados de negocio de cada campaña, así optimizamos la inversión de nuestros socios comerciales. Nuestro trabajo es producto de la colaboración estrecha; escuchamos y organizamos las necesidades específicas de cada marca, diseñamos sus objetivos a la medida y producimos soluciones de comunicación únicas."
+    },
+    "section-one": {
+      "title": "Experiencia a tu servicio",
+      "description": "Te orientamos en la selección de materiales, sustratos y acabados según el requerimiento de cada proyecto; brindándote la mejor calidad y tendencias del mercado en las siguientes técnicas de impresión:",
+      "icosn": [
+        { "title": "Offset" },
+        { "title": "Rotativa" },
+        { "title": "Gran formato" },
+        { "title": "Offset digital" },
+        { "title": "Cama Plana" },
+        { "title": "Acabados" }
+      ],
+      "desription-lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+    },
+    "section-two": {
+      "first-section": {
+        "title": "Offset",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "second-section": {
+        "title": "Rotativa",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "third-section": {
+        "title": "Gran formato",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "quarter-section": {
+        "title": "Offset digital",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "fifth-section": {
+        "title": "Cama Plana",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "sixth-section": {
+        "title": "Acabados",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    }
+  },
   "design": {
     "header": {
       "title": "La estética: un gran argumento de ventas.",
@@ -165,6 +214,5 @@
     "campo3": "Cúal es tu empresa / organización?",
     "campo4": "De qué se trata tu proyecto?",
     "boton": "Enviar"
-  },
-  "greeting_ejemplo": "Hola!"
+  }
 }

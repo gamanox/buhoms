@@ -7,6 +7,7 @@ import { useSpring, useTrail, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
 import SomosBuho from "../pages/SomosBuho";
 import Diseno from "../pages/desing/Diseno";
+import Print from "../pages/print/Print";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   const { t } = useTranslation();
@@ -130,6 +131,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
             {
               0: <SomosBuho />,
               1: <Diseno />,
+              2: <Print />,
             }[id]
           }
         </Container>

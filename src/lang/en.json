@@ -1,37 +1,119 @@
 {
   "home": {
-    "navigation": [
+    "landing": [
       {
-        "titulo": "Búho Solutions: Expertos trabajando con expertos.",
-        "bk_img": "scene_solutions"
+        "titulo_afuera": "Búho: Soluciones de comunicación de clase mundial.",
+        "titulo": "Somos Búho",
+        "parrafo": "Expertos trabajando con expertos."
       },
       {
-        "titulo": "Impresión",
-        "subtitulo": "Lorem ipsum dolor sit amet consectetur. ES",
-        "texto": "Lorem ipsum dolor sit amet consectetur. ES",
-        "textoBtn": "Es  Go somewhere -> 1",
-        "bk_img": "scene_diseno"
-      },
-      {
+        "titulo_afuera": "Diseño",
         "titulo": "Diseño",
-        "subtitulo": "Lorem ipsum dolor sit amet consectetur. ES",
-        "texto": "Lorem ipsum dolor sit amet consectetur. ES",
-        "textoBtn": "Es  Go somewhere -> 2",
-        "bk_img": "scene_solutions"
+        "parrafo": "El arte de persuadir."
       },
       {
+        "titulo_afuera": "Impresión",
+        "titulo": "Impresión",
+        "parrafo": "Soluciones a la medida de tus necesidades."
+      },
+      {
+        "titulo_afuera": "Logística",
         "titulo": "Logística",
-        "subtitulo": "Lorem ipsum dolor sit amet consectetur.ES",
-        "texto": "Lorem ipsum dolor sit amet consectetur. ES",
-        "textoBtn": "Es  Go somewhere -> 3",
-        "bk_img": "scene_diseno"
+        "parrafo": "Herramientas inteligentes a tu servicio."
+      },
+      {
+        "titulo_afuera": "Pick & Pack",
+        "titulo": "Pick & Pack",
+        "parrafo": "Todo lo que necesitas en un sólo lugar."
+      },
+      {
+        "titulo_afuera": "Productos",
+        "titulo": "Productos",
+        "parrafo": "Producimos efectos positivos."
       }
     ]
   },
+  "print": {
+    "header": {
+      "title": "Materializando la inspiración.",
+      "description": "Elegimos sólo los mejores materiales y sistemas de impresión para lograr un equilibrio óptimo entre belleza y utilidad."
+    },
+    "sub-header": {
+      "title": "Nuestro objetivo:",
+      "description": "Aumentar la visibilidad y resultados de negocio de cada campaña, así optimizamos la inversión de nuestros socios comerciales. Nuestro trabajo es producto de la colaboración estrecha; escuchamos y organizamos las necesidades específicas de cada marca, diseñamos sus objetivos a la medida y producimos soluciones de comunicación únicas."
+    },
+    "section-one": {
+      "title": "Experiencia a tu servicio",
+      "description": "Te orientamos en la selección de materiales, sustratos y acabados según el requerimiento de cada proyecto; brindándote la mejor calidad y tendencias del mercado en las siguientes técnicas de impresión:",
+      "icosn": [
+        { "icon-title": "Offset" },
+        { "icon-title": "Rotativa" },
+        { "icon-title": "Gran formato" },
+        { "icon-title": "Offset digital" },
+        { "icon-title": "Cama Plana" },
+        { "icon-title": "Acabados" }
+      ],
+      "desription-lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+    },
+    "section-two": {}
+  },
   "design": {
     "header": {
-      "title": "The aesthetics: a great sales pitch.",
-      "description": "Behind visual inspiration there is a communication purpose. Our design team translates marc a goals into colors and shapes. We help you in the creative process of your graphic projects based on your need for communication."
+      "title": "La estética: un gran argumento de ventas.",
+      "description": "Detrás de la inspiración visual existe un propósito de comunicación. Nuestro equipo de diseño traduce los objetivos de marc  a en colores y formas. Nosotros te ayudamos en el proceso creativo de tus proyectos gráficos a partir de tu necesidad de comunicación."
+    },
+    "section-one": {
+      "title": "El arte de persuadir.",
+      "description": "Ponemos en tus manos nuestra experiencia en in-store marketing y materiales de comunicación impresa, diseñando los elementos necesarios para que tu marca o producto tenga el mejor impacto visual."
+    },
+    "section-two": [
+      {
+        "icon": {
+          "description": "Comunicación gráfica"
+        }
+      },
+      {
+        "icon": {
+          "description": "Innovación en materiales punto de venta"
+        }
+      },
+      {
+        "icon": {
+          "description": "Pre-prensa y corrección de color"
+        }
+      },
+      {
+        "icon": {
+          "description": "Diseño estructural"
+        }
+      },
+      {
+        "icon": {
+          "description": "Diseño editorial y compaginación"
+        }
+      }
+    ],
+    "section-three": {
+      "first-section": {
+        "title": "Comunicación gráfica",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "second-section": {
+        "title": "Innovación en puntos de venta",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "third-section": {
+        "title": "Preprensa",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "quarter-section": {
+        "title": "Diseño estructural",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "fifth-section": {
+        "title": "Diseño editorial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
     }
   },
   "SomosBuho": {
@@ -44,42 +126,61 @@
         "titulo": "Marcando la diferencia desde 2012",
         "parrafo": "Somos una empresa que se involucra a fondo en cada proyecto, con cada marca, de la mano de cada experto, brindando satisfacción garantizada en:"
       },
-      {
-        "titulo1": "Atención y servicio a cliente",
-        "titulo2": "Calidad en materiales y precio",
-        "titulo3": "Logística & seguimiento",
-        "titulo4": "Entregas puntuales",
-        "titulo5": "Soluciones a la medida"
-      }
+      [
+        {
+          "titulo": "Atención y servicio a cliente"
+        },
+        {
+          "titulo": "Calidad en materiales y precio"
+        },
+        {
+          "titulo": "Logística & seguimiento"
+        },
+        {
+          "titulo": "Entregas puntuales"
+        },
+        {
+          "titulo": "Soluciones a la medida"
+        }
+      ]
     ],
     "section3": [
       {
         "titulo": "Lo que hacemos",
         "parrafo": "Nuestro proceso indaga las necesidades y objetivos reales de nuestros clientes ofreciendo soluciones a la medida en:"
       },
-      {
-        "titulo1": "Diseño & Innovación",
-        "titulo2": "Impresión",
-        "titulo3": "Pick & Pack",
-        "titulo4": "Logística",
-        "titulo5": "Productos"
-      },
+      [
+        {
+          "titulo": "Diseño & Innovación"
+        },
+        {
+          "titulo": "Impresión"
+        },
+        {
+          "titulo": "Pick & Pack"
+        },
+        {
+          "titulo": "Logística"
+        },
+        {
+          "titulo": "Productos"
+        }
+      ],
       {
         "pregunta1": "¿Cómo lo hacemos?",
         "texto1": "Creemos en un principio muy simple: una marca deja de ser invisible cuando se vuelve útil.  Por esta razón, nos enfocamos en el momento de la decisión de compra y trabajamos con nuestros clientes para diseñar mensajes claros; producir materiales a medida e incluir la logística en el proceso creativo de nuestras campañas.",
         "pregunta2": "Somos parte del cambio",
         "texto2": "Utilizamos materiales biodegradables como tintas a base de látex y papel reciclado en nuestras impresiones. Además contamos con certificación de Print Releaf; una plataforma para la reforestación global automatizada."
       }
-    ],
-    "section4": [
-      {
-        "subtitulo": "Conoce todos nuestros servicios"
-      }
     ]
+  },
+  "Carrusel": {
+    "subtitulo": "Conoce todos nuestros servicios"
   },
   "Formulario": {
     "titulo": "Queremos saber de tí.",
     "ubicacion": "Argentina #205 Industrial Martel de Santa Catarina, 66367 Santa Catarina, Nuevo León, México.",
+    "link": "Ir a Google Maps",
     "numero": "+52 (81) 1160 4200",
     "email": "hola@buhoms.com",
     "titulo2": "Cuéntanos sobre tu proyecto.",
@@ -88,6 +189,5 @@
     "campo3": "Cúal es tu empresa / organización?",
     "campo4": "De qué se trata tu proyecto?",
     "boton": "Enviar"
-  },
-  "greeting_ejemplo": "Hi!"
+  }
 }
