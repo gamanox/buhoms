@@ -8,12 +8,12 @@ import insta from "../../assets/img/component/formulario/insta.svg";
 import telefono from "../../assets/img/component/formulario/telefono.svg";
 import ubicacion from "../../assets/img/component/formulario/ubicacion.svg";
 
-const Formulario = () => {
+const Formulario = ({ sectionName }) => {
   const { t } = useTranslation();
   return (
     <Row className="Formulario pt-5">
       <Col xs={{ span: 10, offset: 1 }} md={(5, { span: 5, offset: 1 })}>
-        <h1 className="titulo text-white">{t("Formulario.titulo")}</h1>
+        <h1 className={`titulo text-white `}>{t("Formulario.titulo")}</h1>
         <Row>
           <Col xs={{ span: 10, offset: 1 }}>
             <Image src={ubicacion} className="center" />
@@ -35,7 +35,7 @@ const Formulario = () => {
         </Row>
       </Col>
       <Col xs={{ span: 10, offset: 1 }} md={(5, { span: 5, offset: 0 })}>
-        <h1 className="titulo2">{t("Formulario.titulo2")}</h1>
+        <h1 className={`titulo2 ${sectionName} `}>{t("Formulario.titulo2")}</h1>
         <Form>
           <Form.Group controlId="formBasicNombre">
             <Form.Label className="label">{t("Formulario.campo1")}</Form.Label>
@@ -55,7 +55,7 @@ const Formulario = () => {
           </Form.Group>
           <Button
             variant="outline-light"
-            className="btn-outline-enviar float-right"
+            className={`btn-outline-enviar float-right ${sectionName}-border`}
           >
             {t("Formulario.boton")}
           </Button>

@@ -33,6 +33,65 @@
       }
     ]
   },
+  "design": {
+    "header": {
+      "title": "La estética: un gran argumento de ventas.",
+      "description": "Detrás de la inspiración visual existe un propósito de comunicación. Nuestro equipo de diseño traduce los objetivos de marc  a en colores y formas. Nosotros te ayudamos en el proceso creativo de tus proyectos gráficos a partir de tu necesidad de comunicación."
+    },
+    "section-one": {
+      "title": "El arte de persuadir.",
+      "description": "Ponemos en tus manos nuestra experiencia en in-store marketing y materiales de comunicación impresa, diseñando los elementos necesarios para que tu marca o producto tenga el mejor impacto visual."
+    },
+    "section-two": [
+      {
+        "icon": {
+          "description": "Comunicación gráfica"
+        }
+      },
+      {
+        "icon": {
+          "description": "Innovación en materiales punto de venta"
+        }
+      },
+      {
+        "icon": {
+          "description": "Pre-prensa y corrección de color"
+        }
+      },
+      {
+        "icon": {
+          "description": "Diseño estructural"
+        }
+      },
+      {
+        "icon": {
+          "description": "Diseño editorial y compaginación"
+        }
+      }
+    ],
+    "section-three": {
+      "first-section": {
+        "title": "Comunicación gráfica",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "second-section": {
+        "title": "Innovación en puntos de venta",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "third-section": {
+        "title": "Preprensa",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "quarter-section": {
+        "title": "Diseño estructural",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "fifth-section": {
+        "title": "Diseño editorial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    }
+  },
   "SomosBuho": {
     "section1": {
       "titulo": "Búho: Soluciones de comunicación de clase mundial.",
@@ -85,7 +144,7 @@
       ],
       {
         "pregunta1": "¿Cómo lo hacemos?",
-        "texto1": "Creemos en un principio muy simple: una marca deja de ser invisible cuando se vuelve útil.  Por esta razón, nos enfocamos en el momento de la decisión de compra y trabajamos con nuestros clientes para diseñar mensajes claros; producir materiales a medida e incluir la logística en el proceso creativo  de nuestras campañas.",
+        "texto1": "Creemos en un principio muy simple: una marca deja de ser invisible cuando se vuelve útil.  Por esta razón, nos enfocamos en el momento de la decisión de compra y trabajamos con nuestros clientes para diseñar mensajes claros; producir materiales a medida e incluir la logística en el proceso creativo de nuestras campañas.",
         "pregunta2": "Somos parte del cambio",
         "texto2": "Utilizamos materiales biodegradables como tintas a base de látex y papel reciclado en nuestras impresiones. Además contamos con certificación de Print Releaf; una plataforma para la reforestación global automatizada."
       }

@@ -6,6 +6,8 @@ import { Slug, Fade } from "../primitives/Primitives";
 import { useSpring, useTrail, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
 import SomosBuho from "../pages/SomosBuho";
+import Diseno from "../pages/desing/Diseno";
+
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   const { t } = useTranslation();
   const propsA = useSpring({
@@ -124,9 +126,14 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
               </Fade>
             </Col>
           </Row>
+          {
+            {
+              0: <SomosBuho />,
+              1: <Diseno />,
+            }[id]
+          }
         </Container>
       </div>
-      <SomosBuho />
     </div>
   );
 };

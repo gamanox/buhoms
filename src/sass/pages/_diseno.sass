@@ -1,7 +1,101 @@
-diseno_background 
-    height: 100%
-    background-image:url(../../assets/img/scene_diseno.png) no-repeat center center fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
+@font-face
+    font-family: DTLHaarlemmerD
+    src: url("../../assets/fonts/DTLHaarlemmerD/DTLHaarlemmerD/DTLHaarlemmerD.bmap") format("bitmap")
+@font-face
+    font-family: Graphik
+    src: url( "../../assets/fonts/Graphik/Graphik-Regular.otf") format('opentype')
+
+$color-font-header: #00ffea
+$color-font-description: #F0F0F3
+$font-DTLHaarlemmerD:  DTLHaarlemmerD
+$font-Graphik: Graphik
+
+.bg-dark
+    background: #000000 !important
+    overflow: hidden
+
+.title-header
+    font: 100% $font-DTLHaarlemmerD
+    color: $color-font-header
+    font-style: normal
+    font-weight: normal
+    font-size: 72px
+    line-height: 72px
+
+.description-header
+    font-family: 100% $font-Graphik
+    color: $color-font-description
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 45px
+
+.mt-offset
+    margin-top: -2rem
+
+.background-img-section-one
+    // background-image: url("../../assets/img/pages/design/section-one/background/background-design-section-one.png") !important
+    // background-color: #1E1F26 !important
+
+.title-section-one
+    font-family: 100% $font-Graphik
+    font-style: normal
+    font-weight: 600
+    font-size: 50px
+    line-height: 55px
+    text-align: center
+    color: #FFFFFF
+
+.description-section-one
+    font-family: 100% $font-Graphik
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #DFDFE2
+
+.icon-description-text
+    font-family: 100% $font-Graphik
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 14px
+    text-align: center
+    justify-content: center
+    align-items: center
+    color: #FFFFFF !important
+
+Figure
+    width: 200px !important
+
+.titles-section-two
+    font-family: Graphik
+    font-style: normal
+    font-weight: 600
+    font-size: 50px
+    line-height: 55px
+    color: $color-font-header
+
+.description-section-two
+    font-family: Graphik
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    color: #0F1012
+
+.img-parent
+    position: absolute
+    left: -3rem
+    top: -6rem
+
+.img-child
+    position: relative
+    left: 3rem
+    top: -2rem
+
+.img-parent-circle
+    position: absolute
+    top: 0rem
+    right: 6rem

@@ -73,7 +73,10 @@ function CardParallax1() {
       </animated.div>
 
       <animated.div style={{ transform: props.xy.interpolate(trans2) }}>
-        <Image src={VectorCirculoImg} />
+        <Image
+          src={VectorCirculoImg}
+          style={{ width: "640px", height: "484px" }}
+        />
       </animated.div>
     </div>
   );
@@ -186,8 +189,8 @@ const SomosBuho = () => {
           </Col>
         </Col>
       </Row>
-      <Carrusel />
-      <Formulario />
+      <Carrusel backgroundPath="we-are-owl" />
+      <Formulario sectionName="we-are-owl" />
     </section>
   );
 };
