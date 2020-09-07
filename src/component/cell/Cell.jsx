@@ -9,6 +9,7 @@ import SomosBuho from "../pages/SomosBuho";
 import Diseno from "../pages/desing/Diseno";
 import Print from "../pages/print/Print";
 import Logistica from "../pages/Logistica";
+import PickPack from "../pages/PickPack";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   const { t } = useTranslation();
@@ -134,6 +135,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
               1: <Diseno />,
               2: <Print />,
               3: <Logistica />,
+              4: <PickPack />,
             }[id]
           }
         </Container>
