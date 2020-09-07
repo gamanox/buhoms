@@ -82,6 +82,34 @@
       }
     }
   },
+  "logistics": {
+    "header": {
+      "title": "Trabajando para tí.",
+      "description": "En Búho sabemos lo importante que es contar con un servicio eficiente de distribución que optimice tiempos y costos en las operaciones de tu empresa. Por ello, hemos consolidado nuestro servicio de envíos, ofreciendo costos logísticos altamente competitivos."
+    },
+    "sub-header": {
+      "title": "Nuestro proceso",
+      "description": "Nuestro personal calificado, brinda el mejor servicio personalizado a nuestros clientes, y construimos una estrecha relación con ellos transparentando cada momento de nuestro proceso de trabajo:"
+    },
+    "section-one": {
+      "title": "Monitoreo",
+      "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+    },
+    "section-two": {
+      "first-section": {
+        "title": "Monitoreo",
+        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+      },
+      "second-section": {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "third-section": {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    }
+  },
   "design": {
     "header": {
       "title": "La estética: un gran argumento de ventas.",
