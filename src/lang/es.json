@@ -150,6 +150,42 @@
       }
     }
   },
+  "products": {
+    "header": {
+      "title": "Producimos efectos positivos.",
+      "description": "Diseñamos, creamos, imprimimos, enviamos, y entregamos experiencias para marcas que trabajan no solo por ser visibles, sino memorables. No vendemos millares de impresiones, sino el efecto que causa un mensaje único entregado de manera efectiva y particular en los ojos, oídos y mente adecuados."
+    },
+    "sub-header": {
+      "title": "Soluciones versátiles",
+      "description": "Producimos una amplia gama de materiales, para hacer de tu marca una experiencia única."
+    },
+    "section-two": {
+      "first-section": {
+        "title": "Puntos de venta",
+        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+      },
+      "second-section": {
+        "title": "Exterior",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "third-section": {
+        "title": "Industrial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "quarter-section": {
+        "title": "Editorial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "fifth-section": {
+        "title": "Promocionales",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "sixth-section": {
+        "title": "Corporativo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    }
+  },
   "design": {
     "header": {
       "title": "La estética: un gran argumento de ventas.",
