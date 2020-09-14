@@ -24,15 +24,11 @@ export default function ReusableComponentCardParalax({
       onMouseMove={({ clientX: x, clientY: y }) =>
         set({ xy: calculation(x, y) })
       }
-      style={{ width: "412px", height: "412px" }}
     >
       <animated.div
         style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
       >
-        <Image
-          src={backgroundImage}
-          style={{ width: "412px", height: "412px" }}
-        />
+        <Image src={backgroundImage} className="img-fluid" />
       </animated.div>
 
       <animated.div
@@ -40,7 +36,7 @@ export default function ReusableComponentCardParalax({
           transform: props.xy.interpolate(backgroundImageTransformation),
         }}
       >
-        <Image src={mainPicture} className="image-fluid" />
+        <Image src={mainPicture} className="imag-fluid" />
       </animated.div>
     </Container>
   );
