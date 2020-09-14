@@ -4,11 +4,31 @@ import { Container, Col, Row } from "react-bootstrap";
 import ReusableComponentIcons from "./ReusableComponentIcons";
 import i18n from "../../../../shared/i18n";
 
-import iconOne from "../../../../assets/img/pages/design/section-one-icons/graphic-one-section-one.svg";
-import iconTwo from "../../../../assets/img/pages/design/section-one-icons/graphic-two-section-one.svg";
-import iconThree from "../../../../assets/img/pages/design/section-one-icons/graphic-three-section-one.svg";
-import iconFour from "../../../../assets/img/pages/design/section-one-icons/graphic-four-section-one.svg";
-import iconFive from "../../../../assets/img/pages/design/section-one-icons/graphic-five-section-one.svg";
+import iconOneOwl from "../../../../assets/Iconography/WeAreOwl/iconOne.svg";
+import iconTwoOwl from "../../../../assets/Iconography/WeAreOwl/iconTwo.svg";
+import iconThreeOwl from "../../../../assets/Iconography/WeAreOwl/iconThree.svg";
+import iconFourOwl from "../../../../assets/Iconography/WeAreOwl/iconFour.svg";
+import iconFiveOwl from "../../../../assets/Iconography/WeAreOwl/iconFive.svg";
+
+import iconOneDesign from "../../../../assets/Iconography/Design/iconOne.svg";
+import iconTwoDesign from "../../../../assets/Iconography/Design/iconTwo.svg";
+import iconThreeDesign from "../../../../assets/Iconography/Design/iconThree.svg";
+import iconFourDesign from "../../../../assets/Iconography/Design/iconFour.svg";
+import iconFiveDesign from "../../../../assets/Iconography/Design/iconFive.svg";
+
+import iconOnePrint from "../../../../assets/Iconography/Print/iconOne.svg";
+import iconTwoPrint from "../../../../assets/Iconography/Print/iconTwo.svg";
+import iconThreePrint from "../../../../assets/Iconography/Print/iconThree.svg";
+import iconFourPrint from "../../../../assets/Iconography/Print/iconFour.svg";
+import iconFivePrint from "../../../../assets/Iconography/Print/iconFive.svg";
+import iconSixPrint from "../../../../assets/Iconography/Print/iconSix.svg";
+
+import iconOneProduct from "../../../../assets/Iconography/Product/iconOne.svg";
+import iconTwoProduct from "../../../../assets/Iconography/Product/iconTwo.svg";
+import iconThreeProduct from "../../../../assets/Iconography/Product/iconThree.svg";
+import iconFourProduct from "../../../../assets/Iconography/Product/iconFour.svg";
+import iconFiveProduct from "../../../../assets/Iconography/Product/iconFive.svg";
+import iconSixProduct from "../../../../assets/Iconography/Product/iconSix.svg";
 
 function getTitle(nameSection) {
   switch (nameSection) {
@@ -44,14 +64,31 @@ function getDescription(nameSection) {
 }
 
 export default function ReusableComponentSectionIcons({ nameSection }) {
-  const iconImages = [
-    iconOne,
-    iconTwo,
-    iconThree,
-    iconFour,
-    iconFive,
-    iconFive,
+  const owl = [iconOneOwl, iconTwoOwl, iconThreeOwl, iconFourOwl, iconFiveOwl];
+  const design = [
+    iconOneDesign,
+    iconTwoDesign,
+    iconThreeDesign,
+    iconFourDesign,
+    iconFiveDesign,
   ];
+  const print = [
+    iconOnePrint,
+    iconTwoPrint,
+    iconThreePrint,
+    iconFourPrint,
+    iconFivePrint,
+    iconSixPrint,
+  ];
+  const product = [
+    iconOneProduct,
+    iconTwoProduct,
+    iconThreeProduct,
+    iconFourProduct,
+    iconFiveProduct,
+    iconSixProduct,
+  ];
+
   return (
     <Container
       fluid
@@ -66,10 +103,34 @@ export default function ReusableComponentSectionIcons({ nameSection }) {
         </Col>
       </Row>
       <Row className="justify-content-md-center pt-5">
-        <ReusableComponentIcons
-          iconImages={iconImages}
-          nameSection={nameSection}
-        />
+        {
+          {
+            "we-are-owl": (
+              <ReusableComponentIcons
+                iconImages={owl}
+                nameSection={nameSection}
+              />
+            ),
+            design: (
+              <ReusableComponentIcons
+                iconImages={design}
+                nameSection={nameSection}
+              />
+            ),
+            print: (
+              <ReusableComponentIcons
+                iconImages={print}
+                nameSection={nameSection}
+              />
+            ),
+            products: (
+              <ReusableComponentIcons
+                iconImages={product}
+                nameSection={nameSection}
+              />
+            ),
+          }[nameSection]
+        }
       </Row>
     </Container>
   );

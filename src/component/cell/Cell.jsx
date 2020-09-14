@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Slug, Fade } from "../primitives/Primitives";
 import { useSpring, useTrail, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
-import SomosBuho from "../pages/SomosBuho";
+import ReusableComponent from "../pages/ReusableComponent/ReusableComponent";
 import Diseno from "../pages/desing/Diseno";
 import Print from "../pages/print/Print";
 import Logistica from "../pages/Logistica";
@@ -132,12 +132,12 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
           </Row>
           {
             {
-              0: <SomosBuho />,
-              1: <Diseno />,
-              2: <Print />,
-              3: <Logistica />,
-              4: <PickPack />,
-              5: <Products />,
+              0: <ReusableComponent nameSection="we-are-owl" />,
+              1: <ReusableComponent nameSection="design" />,
+              2: <ReusableComponent nameSection="print" />,
+              3: <ReusableComponent nameSection="logistics" />,
+              4: <ReusableComponent nameSection="pickandpack" />,
+              5: <ReusableComponent nameSection="products" />,
             }[id]
           }
         </Container>
