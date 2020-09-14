@@ -32,6 +32,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
     navigator.userAgent.indexOf(" OPR/") >= 0;
 
   // Firefox 1.0+
+  // eslint-disable-next-line
   var isFirefox = typeof InstallTrigger !== "undefined";
 
   // Safari 3.0+ "[object HTMLElementConstructor]"
@@ -48,6 +49,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
   // Edge 20+
+  // eslint-disable-next-line
   var isEdge = !isIE && !!window.StyleMedia;
 
   // Chrome 1 - 79
@@ -55,9 +57,11 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
     !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
 
   // Edge (based on chromium) detection
+  // eslint-disable-next-line
   var isEdgeChromium = isChrome && navigator.userAgent.indexOf("Edg") !== -1;
 
   // Blink engine detection
+  // eslint-disable-next-line
   var isBlink = (isChrome || isOpera) && !!window.CSS;
 
   return (
