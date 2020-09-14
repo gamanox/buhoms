@@ -64,13 +64,13 @@ export default function ReusableComponentContent({ nameSection }) {
   const owl = i18n
     .t("we-are-owl.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center spacing-between-sections"
-        key={id}
-      >
-        <Col md={{ span: 10, offset: 1 }}>
+      <Row className="bg-light justify-content-md-center" key={id}>
+        <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`mt-5 ${id / 2 ? `order-last` : ``}`}>
+            <Col
+              md="4"
+              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
@@ -78,7 +78,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="align-middle">
+            <Col md="8" className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={owlImages[id]}
                 backgroundImage={circle}
@@ -91,13 +91,13 @@ export default function ReusableComponentContent({ nameSection }) {
   const design = i18n
     .t("design.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center spacing-between-sections"
-        key={id}
-      >
-        <Col md={{ span: 10, offset: 1 }}>
+      <Row className="bg-light justify-content-md-center" key={id}>
+        <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`mt-5 ${id / 2 ? `order-last` : ``}`}>
+            <Col
+              md="4"
+              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
@@ -105,7 +105,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="align-middle">
+            <Col md="8" className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={designImages[id]}
                 backgroundImage={circle}
@@ -118,13 +118,13 @@ export default function ReusableComponentContent({ nameSection }) {
   const print = i18n
     .t("print.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center spacing-between-sections"
-        key={id}
-      >
-        <Col md={{ span: 10, offset: 1 }}>
+      <Row className="bg-light justify-content-md-center" key={id}>
+        <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`mt-5 ${id / 2 ? `order-last` : ``}`}>
+            <Col
+              md="4"
+              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
@@ -132,7 +132,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="align-middle">
+            <Col md="8" className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={printImages[id]}
                 backgroundImage={circle}
@@ -145,13 +145,13 @@ export default function ReusableComponentContent({ nameSection }) {
   const logistics = i18n
     .t("logistics.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center spacing-between-sections"
-        key={id}
-      >
-        <Col md={{ span: 10, offset: 1 }}>
+      <Row className="bg-light justify-content-md-center" key={id}>
+        <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`mt-5 ${id / 2 ? `order-last` : ``}`}>
+            <Col
+              md="4"
+              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
@@ -159,7 +159,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="align-middle">
+            <Col md="8" className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={logisticsImages[id]}
                 backgroundImage={circle}
@@ -172,13 +172,13 @@ export default function ReusableComponentContent({ nameSection }) {
   const pickAndPack = i18n
     .t("pickandpack.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center spacing-between-sections"
-        key={id}
-      >
-        <Col md={{ span: 10, offset: 1 }}>
+      <Row className="bg-light justify-content-md-center" key={id}>
+        <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`mt-5 ${id / 2 ? `order-last` : ``}`}>
+            <Col
+              md="4"
+              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
@@ -186,7 +186,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="align-middle">
+            <Col md="8" className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={pickAndPackImages[id]}
                 backgroundImage={circle}
@@ -199,13 +199,13 @@ export default function ReusableComponentContent({ nameSection }) {
   const product = i18n
     .t("products.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center spacing-between-sections"
-        key={id}
-      >
-        <Col md={{ span: 10, offset: 1 }}>
+      <Row className="bg-light justify-content-md-center" key={id}>
+        <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`mt-5 ${id / 2 ? `order-last` : ``}`}>
+            <Col
+              md="4"
+              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
@@ -213,7 +213,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="align-middle">
+            <Col md="8" className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={ImageProductContentOne}
                 backgroundImage={circle}

@@ -6,11 +6,6 @@ import { Slug, Fade } from "../primitives/Primitives";
 import { useSpring, useTrail, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
 import ReusableComponent from "../pages/ReusableComponent/ReusableComponent";
-import Diseno from "../pages/desing/Diseno";
-import Print from "../pages/print/Print";
-import Logistica from "../pages/Logistica";
-import PickPack from "../pages/PickPack";
-import Products from "../pages/Products";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   const { t } = useTranslation();

@@ -34,6 +34,8 @@ function getTitle(nameSection) {
   switch (nameSection) {
     case "we-are-owl":
       return i18n.t("we-are-owl.section-one.title");
+    case "design":
+      return i18n.t("design.section-one.title");
     case "print":
       return i18n.t("print.section-one.title");
     case "logistics":
@@ -50,6 +52,8 @@ function getDescription(nameSection) {
   switch (nameSection) {
     case "we-are-owl":
       return i18n.t("we-are-owl.section-one.description");
+    case "design":
+      return i18n.t("design.section-one.description");
     case "print":
       return i18n.t("print.section-one.description");
     case "logistics":
