@@ -123,18 +123,18 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                   </Slug>
                 </div>
               </Fade>
+              {
+                {
+                  0: <ReusableComponent nameSection="we-are-owl" />,
+                  1: <ReusableComponent nameSection="design" />,
+                  2: <ReusableComponent nameSection="print" />,
+                  3: <ReusableComponent nameSection="logistics" />,
+                  4: <ReusableComponent nameSection="pickandpack" />,
+                  5: <ReusableComponent nameSection="products" />,
+                }[id]
+              }
             </Col>
           </Row>
-          {
-            {
-              0: <ReusableComponent nameSection="we-are-owl" />,
-              1: <ReusableComponent nameSection="design" />,
-              2: <ReusableComponent nameSection="print" />,
-              3: <ReusableComponent nameSection="logistics" />,
-              4: <ReusableComponent nameSection="pickandpack" />,
-              5: <ReusableComponent nameSection="products" />,
-            }[id]
-          }
         </Container>
       </div>
     </div>
