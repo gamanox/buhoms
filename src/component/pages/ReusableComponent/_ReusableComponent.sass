@@ -1,0 +1,173 @@
+$color-text-we-are-owl: #00FF00
+$color-text-design: #00FFEA
+$color-text-print: #FF0054
+$color-text-logistics: #FFF000
+$color-text-pickandpack: #A31BFF
+$color-text-products: #0047FF
+$background-color: #000000
+$background-color-section-two: #1E1F26
+$color-title-white: #FFFFFF
+$color-text-section-content: #0F1012
+$color-icon-title: #515157
+
+@namespace svg url(http://www.w3.org/2000/svg)
+
+@font-face
+    font-family: "DTLHaarlemmerD"
+    src: url("../../../assets/fonts/DTLHaarlemmerD/DTLHaarlemmerD/DTLHaarlemmerD.bmap") format("bmap")
+
+@font-face
+    font-family: "Graphik"
+    src: url("../../../assets/fonts/Graphik/Graphik-Regular.otf") format("otf")
+
+$font-italic: "DTLHaarlemmerD"
+$font-body: "Graphik"
+
+@mixin define-text-color($section)
+
+    @if $section == "we-are-owl"
+        color: $color-text-we-are-owl
+    @else if $section == "design"
+        color: $color-text-design
+    @else if $section == "print"
+        color: $color-text-print
+    @else if $section == "logistics"
+        color: $color-text-logistics
+    @else if $section == "pickandpack"
+        color: $color-text-pickandpack
+    @else if $section == "products"
+        color: $color-text-products
+    @else
+        @error "Unknown section #{$section}."
+
+section
+    background: $background-color
+    overflow: hidden
+
+h1
+    font-style: normal
+    font-weight: normal
+    font-size: 72px
+    line-height: 72px
+    font-family: $font-italic
+
+    .we-are-owl
+        @include define-text-color("we-are-owl")
+
+    .design
+        @include define-text-color("design")
+
+    .print
+        @include define-text-color("print")
+
+    .logistics
+        @include define-text-color("logistics")
+
+    .pickandpack
+        @include define-text-color("pickandpack")
+
+    .products
+        @include define-text-color("products")
+
+.title-section-two
+    font-style: normal
+    font-weight: 600
+    font-size: 50px
+    line-height: 55px
+    font-family: $font-italic
+
+    .we-are-owl
+        @include define-text-color("we-are-owl")
+
+    .design
+        @include define-text-color("design")
+
+    .print
+        @include define-text-color("print")
+
+    .logistics
+        @include define-text-color("logistics")
+
+    .pickandpack
+        @include define-text-color("pickandpack")
+
+    .products
+        @include define-text-color("products")
+
+.description-section-two
+    font-family: $font-body
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    color: $color-text-section-content
+
+.section-two-title
+    font-style: normal
+    font-weight: 600
+    font-size: 50px
+    line-height: 55px
+    font-family: $font-body
+    color: $color-title-white
+    text-align: center
+
+.section-one-description
+    font-family: $font-body
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 45px
+    color: #F0F0F3
+
+.section-two-description
+    font-family: $font-body
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+
+.background-color-section-two
+    background: $background-color-section-two
+
+.spacing-between-sections
+    padding-top: 5rem !important
+    padding-bottom: 10rem !important
+
+.content-title
+    font-family: "Graphik"
+    font-style: normal
+    font-weight: 600
+    font-size: 50px
+    line-height: 55px
+    text-align: center
+    color: $color-text-we-are-owl
+
+.content-description
+    font-family: "Graphik"
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: $color-text-section-content
+
+.icon-section-title-we-are-owl
+    font-family: "Graphik"
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 125%
+    text-align: center
+    color: $color-icon-title
+
+.icon-section-title
+    font-family: "Graphik"
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 18px
+    text-align: center
+    color: #FFFFFF
+
+.equal-padding

@@ -1,31 +1,11 @@
 import React from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
 import i18n from "../../../shared/i18n";
-// import iconOne from "../../../assets/img/pages/design/section-one-icons/graphic-one-section-one.svg";
-// import iconTwo from "../../../assets/img/pages/design/section-one-icons/graphic-two-section-one.svg";
-// import iconThree from "../../../assets/img/pages/design/section-one-icons/graphic-three-section-one.svg";
-// import iconFour from "../../../assets/img/pages/design/section-one-icons/graphic-four-section-one.svg";
-// import iconFive from "../../../assets/img/pages/design/section-one-icons/graphic-five-section-one.svg";
 import Bean from "../../../assets/img/pages/design/section-two/icon-background-bean.svg";
 import Circle from "../../../assets/img/pages/design/section-two/icon-background-circle.svg";
 import ImageBean from "../../../assets/img/pages/somos_buho/VectorCirculoImg2.svg";
 import Formulario from "../../form/Form";
 import Carrusel from "../../carousel/Carousel";
-
-// const icons = [iconOne, iconTwo, iconThree, iconFour, iconFive];
-
-// const iconsComponentPrint = i18n
-//   .t("print.icosn", { returnObjects: true })
-//   .map((item, i) => (
-//     <Col md="2" sm="12" key={i}>
-//       <Figure className="p-1 m-1 text-center">
-//         <Figure.Image src={icons[i]} className="pl-0 ml-0" />
-//         <Figure.Caption className="icon-description-text">
-//           {item.title}
-//         </Figure.Caption>
-//       </Figure>
-//     </Col>
-//   ));
 
 const Print = () => {
   const headerSection = (

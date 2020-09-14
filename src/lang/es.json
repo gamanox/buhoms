@@ -33,158 +33,83 @@
       }
     ]
   },
-  "print": {
+  "we-are-owl": {
     "header": {
-      "title": "Materializando la inspiración.",
-      "description": "Elegimos sólo los mejores materiales y sistemas de impresión para lograr un equilibrio óptimo entre belleza y utilidad."
-    },
-    "sub-header": {
-      "title": "Nuestro objetivo:",
-      "description": "Aumentar la visibilidad y resultados de negocio de cada campaña, así optimizamos la inversión de nuestros socios comerciales. Nuestro trabajo es producto de la colaboración estrecha; escuchamos y organizamos las necesidades específicas de cada marca, diseñamos sus objetivos a la medida y producimos soluciones de comunicación únicas."
+      "title": "Búho: Soluciones de comunicación de clase mundial.",
+      "description": "Ayudamos desde emprendedores con startUps, hasta marcas con presencia nacional y alcance mundial a ser competitivas en un mundo hambriento de consistencia, ‘uniqueness’ y mejores experiencias."
     },
     "section-one": {
-      "title": "Experiencia a tu servicio",
-      "description": "Te orientamos en la selección de materiales, sustratos y acabados según el requerimiento de cada proyecto; brindándote la mejor calidad y tendencias del mercado en las siguientes técnicas de impresión:",
-      "icosn": [
-        { "title": "Offset" },
-        { "title": "Rotativa" },
-        { "title": "Gran formato" },
-        { "title": "Offset digital" },
-        { "title": "Cama Plana" },
-        { "title": "Acabados" }
-      ],
-      "desription-lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      "title": "Marcando la diferencia desde 2012",
+      "description": "Somos una empresa que se involucra a fondo en cada proyecto, con cada marca, de la mano de cada experto, brindando satisfacción garantizada en:"
     },
-    "section-two": {
-      "first-section": {
-        "title": "Offset",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+    "section-two": [
+      {
+        "icon": {
+          "description": "Atención y servicio a cliente"
+        }
       },
-      "second-section": {
-        "title": "Rotativa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "icon": {
+          "description": "Calidad en materiales y precio"
+        }
       },
-      "third-section": {
-        "title": "Gran formato",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "icon": {
+          "description": "Logística & seguimiento"
+        }
       },
-      "quarter-section": {
-        "title": "Offset digital",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "icon": {
+          "description": "Entregas puntuales"
+        }
       },
-      "fifth-section": {
-        "title": "Cama Plana",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "sixth-section": {
-        "title": "Acabados",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "icon": {
+          "description": "Soluciones a la medida"
+        }
       }
-    }
-  },
-  "logistics": {
-    "header": {
-      "title": "Trabajando para tí.",
-      "description": "En Búho sabemos lo importante que es contar con un servicio eficiente de distribución que optimice tiempos y costos en las operaciones de tu empresa. Por ello, hemos consolidado nuestro servicio de envíos, ofreciendo costos logísticos altamente competitivos."
+    ],
+    "special-section": {
+      "title": "Lo que hacemos",
+      "description": "Nuestro proceso indaga las necesidades y objetivos reales de nuestros clientes ofreciendo soluciones a la medida en:"
     },
-    "sub-header": {
-      "title": "Nuestro proceso",
-      "description": "Nuestro personal calificado, brinda el mejor servicio personalizado a nuestros clientes, y construimos una estrecha relación con ellos transparentando cada momento de nuestro proceso de trabajo:"
-    },
-    "section-one": {
-      "title": "Monitoreo",
-      "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
-    },
-    "section-two": {
-      "first-section": {
-        "title": "Monitoreo",
-        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+    "special-section-icons": [
+      {
+        "icon": {
+          "description": "Diseño & Innovación"
+        }
       },
-      "second-section": {
-        "title": "Lorem ipsum dolor sit amet",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "icon": {
+          "description": "Impresión"
+        }
       },
-      "third-section": {
-        "title": "Lorem ipsum dolor sit amet",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "icon": {
+          "description": "Pick & Pack"
+        }
+      },
+      {
+        "icon": {
+          "description": "Logística"
+        }
+      },
+      {
+        "icon": {
+          "description": "Soluciones a la medida"
+        }
       }
-    }
-  },
-  "pickandpack": {
-    "header": {
-      "title": "Un servicio a la medida",
-      "description": "Nuestro servicio de Pick & Pack comprende desde el almacenaje hasta la recolección y agrupación de productos de un pedido, mediante un proceso automatizado y personalizado en base a cada proyecto:"
-    },
-    "section-two": {
-      "first-section": {
-        "title": "Almacenamiento",
-        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+    ],
+    "content": [
+      {
+        "title": "¿Cómo lo hacemos?",
+        "description": "Creemos en un principio muy simple: una marca deja de ser invisible cuando se vuelve útil.  Por esta razón, nos enfocamos en el momento de la decisión de compra y trabajamos con nuestros clientes para diseñar mensajes claros; producir materiales a medida e incluir la logística en el proceso creativo de nuestras campañas."
       },
-      "second-section": {
-        "title": "Clasificación",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "third-section": {
-        "title": "Gestión de inventarios",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "quarter-section": {
-        "title": "Etiquetado",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "fifth-section": {
-        "title": "Recolección de pedidos",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "sixth-section": {
-        "title": "Empaque y embalaje",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "seventh-section": {
-        "title": "Distribución local y nacional",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "eighth-section": {
-        "title": "Monitoreo en tiempo real",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      {
+        "title": "Somos parte del cambio",
+        "description": "Utilizamos materiales biodegradables como tintas a base de látex y papel reciclado en nuestras impresiones. Además contamos con certificación de Print Releaf; una plataforma para la reforestación global automatizada."
       }
-    }
-  },
-  "products": {
-    "header": {
-      "title": "Producimos efectos positivos.",
-      "description": "Diseñamos, creamos, imprimimos, enviamos, y entregamos experiencias para marcas que trabajan no solo por ser visibles, sino memorables. No vendemos millares de impresiones, sino el efecto que causa un mensaje único entregado de manera efectiva y particular en los ojos, oídos y mente adecuados."
-    },
-    "sub-header": {
-      "title": "Soluciones versátiles",
-      "description": "Producimos una amplia gama de materiales, para hacer de tu marca una experiencia única."
-    },
-    "section-two": {
-      "first-section": {
-        "title": "Puntos de venta",
-        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
-      },
-      "second-section": {
-        "title": "Exterior",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "third-section": {
-        "title": "Industrial",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "quarter-section": {
-        "title": "Editorial",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "fifth-section": {
-        "title": "Promocionales",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      "sixth-section": {
-        "title": "Corporativo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      }
-    }
+    ]
   },
   "design": {
     "header": {
@@ -222,84 +147,234 @@
         }
       }
     ],
-    "section-three": {
-      "first-section": {
+    "content": [
+      {
         "title": "Comunicación gráfica",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       },
-      "second-section": {
+      {
         "title": "Innovación en puntos de venta",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       },
-      "third-section": {
+      {
         "title": "Preprensa",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       },
-      "quarter-section": {
+      {
         "title": "Diseño estructural",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       },
-      "fifth-section": {
+      {
         "title": "Diseño editorial",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       }
-    }
+    ]
   },
-  "SomosBuho": {
-    "section1": {
-      "titulo": "Búho: Soluciones de comunicación de clase mundial.",
-      "parrafo": "Ayudamos desde emprendedores con startUps, hasta marcas con presencia nacional y alcance mundial a ser competitivas en un mundo hambriento de consistencia, ‘uniqueness’ y mejores experiencias."
+  "print": {
+    "header": {
+      "title": "Materializando la inspiración.",
+      "description": "Elegimos sólo los mejores materiales y sistemas de impresión para lograr un equilibrio óptimo entre belleza y utilidad."
     },
-    "section2": [
+    "sub-header": {
+      "title": "Nuestro objetivo:",
+      "description": "Aumentar la visibilidad y resultados de negocio de cada campaña, así optimizamos la inversión de nuestros socios comerciales. Nuestro trabajo es producto de la colaboración estrecha; escuchamos y organizamos las necesidades específicas de cada marca, diseñamos sus objetivos a la medida y producimos soluciones de comunicación únicas."
+    },
+    "section-one": {
+      "title": "Experiencia a tu servicio",
+      "description": "Te orientamos en la selección de materiales, sustratos y acabados según el requerimiento de cada proyecto; brindándote la mejor calidad y tendencias del mercado en las siguientes técnicas de impresión:"
+    },
+    "section-two": [
       {
-        "titulo": "Marcando la diferencia desde 2012",
-        "parrafo": "Somos una empresa que se involucra a fondo en cada proyecto, con cada marca, de la mano de cada experto, brindando satisfacción garantizada en:"
-      },
-      [
-        {
-          "titulo": "Atención y servicio a cliente"
-        },
-        {
-          "titulo": "Calidad en materiales y precio"
-        },
-        {
-          "titulo": "Logística & seguimiento"
-        },
-        {
-          "titulo": "Entregas puntuales"
-        },
-        {
-          "titulo": "Soluciones a la medida"
+        "icon": {
+          "description": "Offset"
         }
-      ]
+      },
+      {
+        "icon": {
+          "description": "Rotativa"
+        }
+      },
+      {
+        "icon": {
+          "description": "Gran formato"
+        }
+      },
+      {
+        "icon": {
+          "description": "Offset digital"
+        }
+      },
+      {
+        "icon": {
+          "description": "Cama Plana"
+        }
+      },
+      {
+        "icon": {
+          "description": "Acabados"
+        }
+      }
     ],
-    "section3": [
+    "content": [
       {
-        "titulo": "Lo que hacemos",
-        "parrafo": "Nuestro proceso indaga las necesidades y objetivos reales de nuestros clientes ofreciendo soluciones a la medida en:"
+        "title": "Offset",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       },
-      [
-        {
-          "titulo": "Diseño & Innovación"
-        },
-        {
-          "titulo": "Impresión"
-        },
-        {
-          "titulo": "Pick & Pack"
-        },
-        {
-          "titulo": "Logística"
-        },
-        {
-          "titulo": "Productos"
-        }
-      ],
       {
-        "pregunta1": "¿Cómo lo hacemos?",
-        "texto1": "Creemos en un principio muy simple: una marca deja de ser invisible cuando se vuelve útil.  Por esta razón, nos enfocamos en el momento de la decisión de compra y trabajamos con nuestros clientes para diseñar mensajes claros; producir materiales a medida e incluir la logística en el proceso creativo de nuestras campañas.",
-        "pregunta2": "Somos parte del cambio",
-        "texto2": "Utilizamos materiales biodegradables como tintas a base de látex y papel reciclado en nuestras impresiones. Además contamos con certificación de Print Releaf; una plataforma para la reforestación global automatizada."
+        "title": "Rotativa",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Gran formato",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Offset digital",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Cama Plana",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Acabados",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    ]
+  },
+  "logistics": {
+    "header": {
+      "title": "Trabajando para tí.",
+      "description": "En Búho sabemos lo importante que es contar con un servicio eficiente de distribución que optimice tiempos y costos en las operaciones de tu empresa. Por ello, hemos consolidado nuestro servicio de envíos, ofreciendo costos logísticos altamente competitivos."
+    },
+    "sub-header": {
+      "title": "Nuestro proceso",
+      "description": "Nuestro personal calificado, brinda el mejor servicio personalizado a nuestros clientes, y construimos una estrecha relación con ellos transparentando cada momento de nuestro proceso de trabajo:"
+    },
+    "section-one": {
+      "title": "Monitoreo",
+      "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+    },
+    "content": [
+      {
+        "title": "Monitoreo",
+        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    ]
+  },
+  "pickandpack": {
+    "header": {
+      "title": "Un servicio a la medida",
+      "description": "Nuestro servicio de Pick & Pack comprende desde el almacenaje hasta la recolección y agrupación de productos de un pedido, mediante un proceso automatizado y personalizado en base a cada proyecto:"
+    },
+    "content": [
+      {
+        "title": "Almacenamiento",
+        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+      },
+      {
+        "title": "Clasificación",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Gestión de inventarios",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Etiquetado",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Recolección de pedidos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Empaque y embalaje",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Distribución local y nacional",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Monitoreo en tiempo real",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      }
+    ]
+  },
+  "products": {
+    "header": {
+      "title": "Producimos efectos positivos.",
+      "description": "Diseñamos, creamos, imprimimos, enviamos, y entregamos experiencias para marcas que trabajan no solo por ser visibles, sino memorables. No vendemos millares de impresiones, sino el efecto que causa un mensaje único entregado de manera efectiva y particular en los ojos, oídos y mente adecuados."
+    },
+    "section-one": {
+      "title": "Soluciones versátiles",
+      "description": "Producimos una amplia gama de materiales, para hacer de tu marca una experiencia única."
+    },
+    "section-two": [
+      {
+        "icon": {
+          "description": "Punto de venta"
+        }
+      },
+      {
+        "icon": {
+          "description": "Exterior"
+        }
+      },
+      {
+        "icon": {
+          "description": "Industrial"
+        }
+      },
+      {
+        "icon": {
+          "description": "Editorial"
+        }
+      },
+      {
+        "icon": {
+          "description": "Promocionales"
+        }
+      },
+      {
+        "icon": {
+          "description": "Corporativo"
+        }
+      }
+    ],
+    "content": [
+      {
+        "title": "Puntos de venta",
+        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+      },
+      {
+        "title": "Exterior",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Industrial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Editorial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Promocionales",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      {
+        "title": "Corporativo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
       }
     ]
   },
