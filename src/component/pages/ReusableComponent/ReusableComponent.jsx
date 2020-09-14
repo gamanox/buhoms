@@ -9,6 +9,7 @@ import Formulario from "../../form/Form";
 import Carrusel from "../../carousel/Carousel";
 
 import "./_ReusableComponent.sass";
+import "./_ReusableComponentResponsive.sass";
 
 export default function ReusableComponent({ nameSection }) {
   return (

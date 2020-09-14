@@ -24,11 +24,15 @@ export default function ReusableComponentCardParalax({
       onMouseMove={({ clientX: x, clientY: y }) =>
         set({ xy: calculation(x, y) })
       }
+      style={{ width: "412px", height: "412px" }}
     >
       <animated.div
         style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
       >
-        <Image src={backgroundImage} />
+        <Image
+          src={backgroundImage}
+          style={{ width: "412px", height: "412px" }}
+        />
       </animated.div>
 
       <animated.div
