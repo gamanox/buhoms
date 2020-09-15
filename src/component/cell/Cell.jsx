@@ -25,17 +25,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
     config,
     x: toggleX ? 60 : 70,
   });
-  // Opera 8.0+
-  var isOpera =
-    (!!window.opr && !!window.opr.addons) ||
-    !!window.opera ||
-    navigator.userAgent.indexOf(" OPR/") >= 0;
 
-  // Firefox 1.0+
-  // eslint-disable-next-line
-  var isFirefox = typeof InstallTrigger !== "undefined";
-
-  // Safari 3.0+ "[object HTMLElementConstructor]"
   var isSafari =
     /constructor/i.test(window.HTMLElement) ||
     (function (p) {
@@ -44,25 +34,6 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
       !window["safari"] ||
         (typeof safari !== "undefined" && window.safari.pushNotification)
     );
-
-  // Internet Explorer 6-11
-  var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-
-  // Edge 20+
-  // eslint-disable-next-line
-  var isEdge = !isIE && !!window.StyleMedia;
-
-  // Chrome 1 - 79
-  var isChrome =
-    !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-
-  // Edge (based on chromium) detection
-  // eslint-disable-next-line
-  var isEdgeChromium = isChrome && navigator.userAgent.indexOf("Edg") !== -1;
-
-  // Blink engine detection
-  // eslint-disable-next-line
-  var isBlink = (isChrome || isOpera) && !!window.CSS;
 
   return (
     <div

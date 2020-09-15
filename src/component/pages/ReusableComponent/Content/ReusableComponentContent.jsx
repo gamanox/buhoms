@@ -64,21 +64,16 @@ export default function ReusableComponentContent({ nameSection }) {
   const owl = i18n
     .t("we-are-owl.content", { returnObjects: true })
     .map((item, id) => (
-      <Row
-        className="bg-light justify-content-md-center align-items-center"
-        key={id}
-      >
+      <Row className="bg-light justify-content-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col md="4" className={`pt-5 ${id % 2 ? `order-last` : ``}`}>
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
-              <p className="description-section-two text-break">
-                {item.description}
-              </p>
+              <p className="description-section-two">{item.description}</p>
             </Col>
-            <Col md="8" className="">
+            <Col md="8">
               <ReusableComponentCardParalax
                 mainPicture={owlImages[id]}
                 backgroundImage={circle}

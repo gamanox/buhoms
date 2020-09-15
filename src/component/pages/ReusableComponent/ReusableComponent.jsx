@@ -15,13 +15,10 @@ export default function ReusableComponent({ nameSection }) {
   return (
     <section>
       <ReusableComponentHeader nameSection={nameSection} />
+      {nameSection !== "logistics" && nameSection !== "pickandpack" && (
+        <ReusableComponentSectionIcons nameSection={nameSection} />
+      )}
 
-      {nameSection === "we-are-owl" ||
-        nameSection === "design" ||
-        nameSection === "print" ||
-        (nameSection === "products" && (
-          <ReusableComponentSectionIcons nameSection={nameSection} />
-        ))}
       {nameSection === "we-are-owl" && <ReusableComponentSectionContent />}
       <ReusableComponentContent nameSection={nameSection} />
       <Row>
