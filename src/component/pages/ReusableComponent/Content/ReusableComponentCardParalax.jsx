@@ -11,10 +11,13 @@ export default function ReusableComponentCardParalax({
     x - window.innerWidth / 2,
     y - window.innerHeight / 2,
   ];
+  // eslint-disable-next-line
   const mainPictureTransformation = (x, y) =>
     `translate3d(${x / 20 + 200}px,${y / 10}px,0)`;
+  // eslint-disable-next-line
   const backgroundImageTransformation = (x, y) =>
     `translate3d(${x / 20}px,${y / 10 - 400}px,0)`;
+  // eslint-disable-next-line
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },

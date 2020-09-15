@@ -208,7 +208,6 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col
               sm={12}
               md={4}
-              sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} title-section-two`}>
@@ -218,7 +217,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col sm={12} md={8} sm={12} className="center-objects">
+            <Col sm={12} md={8} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={ImageProductContentOne}
                 backgroundImage={circle}
