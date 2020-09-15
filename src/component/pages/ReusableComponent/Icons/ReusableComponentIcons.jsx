@@ -11,8 +11,8 @@ export default function ReusableComponentIcons({
   const iconsOwl = i18n
     .t("we-are-owl.section-two", { returnObjects: true })
     .map((item, i) => (
-      <Col key={i}>
-        <Figure className="align-text-bottom mx-auto d-block text-center">
+      <Col key={i} sm={12} md="auto" className="text-center mx-auto d-block">
+        <Figure>
           <Figure.Image src={iconImages[i]} className="img-fluid" />
           <Figure.Caption
             className={`icon-section-title${isOwlSection ? `-we-are-owl` : ``}`}
@@ -25,8 +25,8 @@ export default function ReusableComponentIcons({
   const iconsDesign = i18n
     .t("design.section-two", { returnObjects: true })
     .map((item, i) => (
-      <Col key={i}>
-        <Figure className="align-text-bottom mx-auto d-block text-center">
+      <Col key={i} sm={12} md="auto" className="text-center mx-auto d-block">
+        <Figure>
           <Figure.Image src={iconImages[i]} className="img-fluid" />
           <Figure.Caption
             className={`icon-section-title${isOwlSection ? `-we-are-owl` : ``}`}
@@ -39,8 +39,8 @@ export default function ReusableComponentIcons({
   const iconsPrint = i18n
     .t("print.section-two", { returnObjects: true })
     .map((item, i) => (
-      <Col key={i} sm={12} md={2}>
-        <Figure className="align-text-bottom mx-auto d-block text-center">
+      <Col key={i} sm={12} md="auto" className="text-center mx-auto d-block">
+        <Figure>
           <Figure.Image src={iconImages[i]} className="img-fluid" />
           <Figure.Caption
             className={`icon-section-title${isOwlSection ? `-we-are-owl` : ``}`}
@@ -53,8 +53,8 @@ export default function ReusableComponentIcons({
   const iconsProducts = i18n
     .t("products.section-two", { returnObjects: true })
     .map((item, i) => (
-      <Col key={i} sm={12} md={2}>
-        <Figure className="align-text-bottom mx-auto d-block text-center">
+      <Col key={i} sm={12} md="auto" className="text-center mx-auto d-block">
+        <Figure>
           <Figure.Image src={iconImages[i]} className="img-fluid" />
           <Figure.Caption
             className={`icon-section-title${isOwlSection ? `-we-are-owl` : ``}`}

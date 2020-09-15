@@ -14,21 +14,21 @@ export default function ReusableComponentSectionContent() {
   const GroupImagesSection = [Group39, Group40, Group45, Group46, Group47];
   return (
     <Container fluid>
-      <Row className="justify-content-md-center bg-light pt-5">
+      <Row className="px-5 justify-content-center bg-light pt-5">
         <Col xs={12} md={10}>
           <h3 className="content-title">
             {i18n.t("we-are-owl.special-section.title")}
           </h3>
         </Col>
       </Row>
-      <Row className="justify-content-md-center bg-light mt-0 pb-5">
+      <Row className="px-5 justify-content-center bg-light mt-0 pb-5">
         <Col xs={12} md={8}>
           <p className="content-description">
             {i18n.t("we-are-owl.special-section.description")}
           </p>
         </Col>
       </Row>
-      <Row className="justify-content-md-center pb-5 bg-light">
+      <Row className="px-5 justify-content-center pb-5 bg-light">
         <ReusableComponentIcons
           nameSection="we-are-owl"
           iconImages={GroupImagesSection}

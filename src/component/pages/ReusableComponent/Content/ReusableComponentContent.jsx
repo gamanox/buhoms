@@ -67,13 +67,17 @@ export default function ReusableComponentContent({ nameSection }) {
       <Row className="bg-light justify-content-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
-            <Col md="4" className={`pt-5 ${id % 2 ? `order-last` : ``}`}>
+            <Col
+              md={4}
+              sm={12}
+              className={`pt-5 ${id % 2 ? `order-last` : ``}`}
+            >
               <h1 className={`${nameSection} title-section-two`}>
                 {item.title}
               </h1>
               <p className="description-section-two">{item.description}</p>
             </Col>
-            <Col md="8">
+            <Col md={8} sm={12}>
               <ReusableComponentCardParalax
                 mainPicture={owlImages[id]}
                 backgroundImage={circle}
@@ -90,7 +94,8 @@ export default function ReusableComponentContent({ nameSection }) {
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
-              md="4"
+              md={4}
+              sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} title-section-two`}>
@@ -100,7 +105,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="center-objects">
+            <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={designImages[id]}
                 backgroundImage={circle}
@@ -117,7 +122,8 @@ export default function ReusableComponentContent({ nameSection }) {
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
-              md="4"
+              md={4}
+              sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} title-section-two`}>
@@ -127,7 +133,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="center-objects">
+            <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={printImages[id]}
                 backgroundImage={circle}
@@ -144,7 +150,8 @@ export default function ReusableComponentContent({ nameSection }) {
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
-              md="4"
+              md={4}
+              sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} title-section-two`}>
@@ -154,7 +161,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="center-objects">
+            <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={logisticsImages[id]}
                 backgroundImage={circle}
@@ -171,7 +178,8 @@ export default function ReusableComponentContent({ nameSection }) {
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
-              md="4"
+              md={4}
+              sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} title-section-two`}>
@@ -181,7 +189,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="center-objects">
+            <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={pickAndPackImages[id]}
                 backgroundImage={circle}
@@ -198,7 +206,9 @@ export default function ReusableComponentContent({ nameSection }) {
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
-              md="4"
+              sm={12}
+              md={4}
+              sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} title-section-two`}>
@@ -208,7 +218,7 @@ export default function ReusableComponentContent({ nameSection }) {
                 {item.description}
               </p>
             </Col>
-            <Col md="8" className="center-objects">
+            <Col sm={12} md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={ImageProductContentOne}
                 backgroundImage={circle}
@@ -219,7 +229,7 @@ export default function ReusableComponentContent({ nameSection }) {
       </Row>
     ));
   return (
-    <>
+    <div className="px-5 bg-light">
       {
         {
           "we-are-owl": owl,
@@ -230,6 +240,6 @@ export default function ReusableComponentContent({ nameSection }) {
           product: product,
         }[nameSection]
       }
-    </>
+    </div>
   );
 }

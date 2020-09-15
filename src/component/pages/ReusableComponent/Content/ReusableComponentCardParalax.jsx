@@ -14,7 +14,7 @@ export default function ReusableComponentCardParalax({
   const mainPictureTransformation = (x, y) =>
     `translate3d(${x / 20 + 200}px,${y / 10}px,0)`;
   const backgroundImageTransformation = (x, y) =>
-    `translate3d(${x / 20}px,${y / 10 - 340}px,0)`;
+    `translate3d(${x / 20}px,${y / 10 - 400}px,0)`;
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
@@ -24,20 +24,23 @@ export default function ReusableComponentCardParalax({
       onMouseMove={({ clientX: x, clientY: y }) =>
         set({ xy: calculation(x, y) })
       }
-      style={{ width: "auto", height: "550px" }}
+      className="container-responsive h-container"
     >
       <animated.div
-        style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
+      // style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
       >
-        <Image src={backgroundImage} className="img-fluid" />
+        <Image
+          src={backgroundImage}
+          className="img-responsive img-background"
+        />
       </animated.div>
 
       <animated.div
-        style={{
-          transform: props.xy.interpolate(backgroundImageTransformation),
-        }}
+      // style={{
+      //   transform: props.xy.interpolate(backgroundImageTransformation),
+      // }}
       >
-        <Image src={mainPicture} className="imag-fluid" />
+        <Image src={mainPicture} className="img-responsive" />
       </animated.div>
     </Container>
   );

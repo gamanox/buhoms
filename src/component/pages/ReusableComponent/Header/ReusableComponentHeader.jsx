@@ -40,7 +40,7 @@ function getDescription(nameSection) {
 }
 export default function ReusableComponentHeader({ nameSection }) {
   return (
-    <Row className="justify-content-md-center spacing-between-sections">
+    <Row className="px-5 justify-content-center spacing-between-sections">
       <Col xs={12} md={10}>
         <h1 className={`${nameSection}`}>{getTitle(nameSection)}</h1>
         <p className="section-one-description text-justify">

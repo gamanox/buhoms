@@ -96,9 +96,9 @@ export default function ReusableComponentSectionIcons({ nameSection }) {
   return (
     <Container
       fluid
-      className="background-color-section-two spacing-between-sections"
+      className="px-5 background-color-section-two spacing-between-sections"
     >
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col xs={12} md={10}>
           <h1 className="section-two-title">{getTitle(nameSection)}</h1>
           <p className="section-two-description">
@@ -106,7 +106,7 @@ export default function ReusableComponentSectionIcons({ nameSection }) {
           </p>
         </Col>
       </Row>
-      <Row className="justify-content-md-center pt-5">
+      <Row className="justify-content-center pt-5">
         {
           {
             "we-are-owl": (
