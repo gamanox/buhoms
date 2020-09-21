@@ -125,7 +125,7 @@ const App = () => {
               // Delay when active elements (blown up) are minimized again
               closeDelay={0}
               // Regular react-spring configs
-              config={config}
+              config={config.slow}
             >
               {(data, active, toggle) => {
                 return (

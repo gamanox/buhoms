@@ -14,7 +14,7 @@ export default function ReusableComponentSectionContent() {
   const GroupImagesSection = [Group39, Group40, Group45, Group46, Group47];
   return (
     <Container fluid>
-      <Row className="px-5 justify-content-center bg-light pt-5">
+      <Row className="px-5 justify-content-center bg-light pt-5 text-center">
         <Col xs={12} md={10}>
           <h3 className="content-title">
             {i18n.t("we-are-owl.special-section.title")}

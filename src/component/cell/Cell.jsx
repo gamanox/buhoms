@@ -6,6 +6,13 @@ import { Slug, Fade } from "../primitives/Primitives";
 import { useSpring, useTrail, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
 import ReusableComponent from "../pages/ReusableComponent/ReusableComponent";
+import videoSectionDesign from "../../assets/video/DESIGN.mov";
+import videoSectionPrint from "../../assets/video/PRINT.mp4";
+import videoSectionLogistics from "../../assets/video/LOGISTICA.mp4";
+import videoSectionPickandpack from "../../assets/video/PACKING1.mp4";
+import videoSectionProducts from "../../assets/video/PACKING2.mp4";
+import videoSectionWeAreOwl from "../../assets/video/videoSectionWeAreOwl.mp4";
+import poster from "../../assets/Images/WeAreOwl/imageHeader.png";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   const { t } = useTranslation();
@@ -35,7 +42,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         (typeof safari !== "undefined" && window.safari.pushNotification)
     );
 
-  return (
+  const RenderCellComponent = (
     <div
       className="h-100 m-0 p-0"
       style={{
@@ -57,7 +64,6 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         <Container fluid className="h-100 m-0 p-0">
           <Row className="h-100 m-0 p-0">
             <Col className="h-100 m-0 p-0">
-              {/*Intro*/}
               {!active ? (
                 <animated.div
                   style={{
@@ -71,14 +77,12 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                 />
               ) : null}
 
-              {/*Gradiente adentro y afuera*/}
               <div
                 className={`cell_bk_gradiente ${css_gra_hov} ${
                   active ? css_gra : ""
                 }`}
               />
 
-              {/*Afuera*/}
               <div
                 className="h-100"
                 style={{
@@ -104,8 +108,6 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                 ))}
               </div>
 
-              {/*Adentro*/}
-
               <Fade show={active} delay={active ? 300 : 0}>
                 <div className="details">
                   <Slug delay={400}>
@@ -126,7 +128,13 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                         isSafari ? "transform-objects" : ""
                       }`}
                     >
-                      <h1 className="title">
+                      <h1
+                        className="title"
+                        style={{
+                          width: "150%",
+                          transform: "translate(-15%,0)",
+                        }}
+                      >
                         {t(`home.landing.${id}.titulo`)}
                       </h1>
                       <p className="parrafo">
@@ -152,5 +160,55 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
       </div>
     </div>
   );
+  // eslint-disable-next-line
+  const RenderCellComponentWithVideo = (
+    <Container
+      className="h-100 viewport-header"
+      style={{
+        overflow: active ? "scroll" : "hidden",
+        overflowX: active ? "scroll" : "hidden",
+      }}
+    >
+      <Row
+        key={id}
+        className={`cell`}
+        style={{
+          cursor: !active ? "pointer" : "auto",
+          zIndex: active ? 1000 : 1,
+        }}
+        onClick={!active ? toggle : undefined}
+        onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
+        onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
+      >
+        <Col>
+          <Row className="">
+            <Container className="h-100 m-0 p-0">
+              <Row>
+                <Col>
+                  <video id="background-video" loop autoPlay poster={poster}>
+                    <source
+                      src={
+                        {
+                          0: videoSectionWeAreOwl,
+                          1: videoSectionDesign,
+                          2: videoSectionPrint,
+                          3: videoSectionLogistics,
+                          4: videoSectionPickandpack,
+                          5: videoSectionProducts,
+                        }[id]
+                      }
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </Col>
+              </Row>
+            </Container>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  );
+  return RenderCellComponent;
 };
 export default Cell;

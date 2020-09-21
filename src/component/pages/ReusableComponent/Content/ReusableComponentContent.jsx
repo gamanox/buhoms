@@ -72,10 +72,8 @@ export default function ReusableComponentContent({ nameSection }) {
               sm={12}
               className={`pt-5 ${id % 2 ? `order-last` : ``}`}
             >
-              <h1 className={`${nameSection} title-section-two`}>
-                {item.title}
-              </h1>
-              <p className="description-section-two">{item.description}</p>
+              <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <p className="content-description">{item.description}</p>
             </Col>
             <Col md={8} sm={12}>
               <ReusableComponentCardParalax
@@ -98,10 +96,8 @@ export default function ReusableComponentContent({ nameSection }) {
               sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
-              <h1 className={`${nameSection} title-section-two`}>
-                {item.title}
-              </h1>
-              <p className="description-section-two text-break">
+              <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <p className="content-description text-break">
                 {item.description}
               </p>
             </Col>
@@ -126,10 +122,8 @@ export default function ReusableComponentContent({ nameSection }) {
               sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
-              <h1 className={`${nameSection} title-section-two`}>
-                {item.title}
-              </h1>
-              <p className="description-section-two text-break">
+              <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <p className="content-description text-break">
                 {item.description}
               </p>
             </Col>
@@ -154,10 +148,8 @@ export default function ReusableComponentContent({ nameSection }) {
               sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
-              <h1 className={`${nameSection} title-section-two`}>
-                {item.title}
-              </h1>
-              <p className="description-section-two text-break">
+              <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <p className="content-description text-break">
                 {item.description}
               </p>
             </Col>
@@ -182,10 +174,8 @@ export default function ReusableComponentContent({ nameSection }) {
               sm={12}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
-              <h1 className={`${nameSection} title-section-two`}>
-                {item.title}
-              </h1>
-              <p className="description-section-two text-break">
+              <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <p className="content-description text-break">
                 {item.description}
               </p>
             </Col>
@@ -210,10 +200,8 @@ export default function ReusableComponentContent({ nameSection }) {
               md={4}
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
-              <h1 className={`${nameSection} title-section-two`}>
-                {item.title}
-              </h1>
-              <p className="description-section-two text-break">
+              <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <p className="content-description text-break">
                 {item.description}
               </p>
             </Col>
