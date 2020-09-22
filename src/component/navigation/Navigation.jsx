@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import HamburgerButton from "../HamburgerButton/HamburgerButton";
 
 library.add(fab, faBars);
 
@@ -15,6 +16,7 @@ const Navigation = React.memo(({ callback }) => {
     console.log("changeLanguage: " + lng);
     i18n.changeLanguage(lng);
   };
+  // eslint-disable-next-line
   const Bars = <FontAwesomeIcon icon={faBars} size="2x" />;
   const CustomNavbar = (
     <Navbar collapseOnSelect expand="sm" variant="dark" fixed="top">
@@ -36,15 +38,19 @@ const Navigation = React.memo(({ callback }) => {
             className="d-inline-block align-top m-0"
           />
         </Navbar.Brand>
-        <Nav className="">
-          <Nav.Link className="text-body" onClick={() => changeLanguage("es")}>
+        <Nav>
+          <Nav.Link className="text-light" onClick={() => changeLanguage("es")}>
             ES
           </Nav.Link>
-          <span className="text-body align-bottom pt-2 pb-2">|</span>
-          <Nav.Link className="text-body" onClick={() => changeLanguage("en")}>
+          <span className="text-light align-bottom pt-2 pb-2">|</span>
+          <Nav.Link className="text-light" onClick={() => changeLanguage("en")}>
             EN
           </Nav.Link>
-          <div className="d-inline-block align-top mt-1 ml-5">{Bars}</div>
+          <div className="d-inline-block align-top mt-1 ml-5 text-light">
+            <div id="render">
+              <HamburgerButton />
+            </div>
+          </div>
         </Nav>
       </Container>
     </Navbar>
