@@ -30,20 +30,17 @@ export default function ReusableComponentCardParalax({
       className="container-responsive h-container"
     >
       <animated.div
-      // style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
+        style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
       >
-        <Image
-          src={backgroundImage}
-          className="img-responsive img-background"
-        />
+        <Image src={backgroundImage} className="img-fluid" />
       </animated.div>
 
       <animated.div
-      // style={{
-      //   transform: props.xy.interpolate(backgroundImageTransformation),
-      // }}
+        style={{
+          transform: props.xy.interpolate(backgroundImageTransformation),
+        }}
       >
-        <Image src={mainPicture} className="img-responsive" />
+        <Image src={mainPicture} className="img-fluid " />
       </animated.div>
     </Container>
   );

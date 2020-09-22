@@ -12,13 +12,34 @@
     background-size: cover
     cursor: auto
 
+#header
+    background: url('../../assets/Images/Utilities/bottom-image.svg') center bottom no-repeat
+
+#section-background
+    background: url('../../assets/Images/Utilities/background-section-two.svg') center top no-repeat
+    height: 70vh
+
+.centered
+    position: absolute
+    bottom: 1rem
+    left: 50%
+    transform: translate(-50%, -50%)
+
 video
-    object-fit: cover
-    width: 100vw
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
     height: 100vh
-    position: fixed
-    top: 0
-    left: 0
+    z-index: -1
+
+.video
+    margin-top: 0rem
+    margin-right: auto
+    margin-bottom: 0px
+    margin-left: auto
+    padding-right: 0px
+    padding-left: 0px
 
 .viewport-header
     position: relative
@@ -28,6 +49,13 @@ video
     align-items: center
     justify-content: center
     background-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7))
+
+p.text-video
+    font-family: "Graphik"
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 18px
 
 @media only screen and (max-width: 560px)
     .cell

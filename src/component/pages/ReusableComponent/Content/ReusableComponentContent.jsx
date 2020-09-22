@@ -2,12 +2,15 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import ReusableComponentCardParalax from "./ReusableComponentCardParalax";
 import circle from "../../../../assets/img/pages/somos_buho/VectorCirculo.svg";
+import circleDesign from "../../../../assets/img/pages/somos_buho/VectorCirculoDesign.svg";
 import ImageWeAreOwlComponentOne from "../../../../assets/Images/WeAreOwl/imageContentOne.png";
 import ImageWeAreOwlComponentTwo from "../../../../assets/Images/WeAreOwl/imageContentTwo.png";
 
 import ImageDesignContentOne from "../../../../assets/Images/Design/imageDesignContentOne.png";
 import ImageDesignContentTwo from "../../../../assets/Images/Design/imageDesignContentTwo.png";
 import ImageDesignContentThree from "../../../../assets/Images/Design/imageDesignContentThree.png";
+import ImageDesignContentFour from "../../../../assets/Images/Design/imageDesignContentFour.png";
+import ImageDesignContentFive from "../../../../assets/Images/Design/imageDesignContentFive.png";
 
 import ImagePrintContentOne from "../../../../assets/Images/Print/imagePrintContentOne.png";
 import ImagePrintContentTwo from "../../../../assets/Images/Print/imagePrintContentTwo.png";
@@ -38,6 +41,8 @@ export default function ReusableComponentContent({ nameSection }) {
     ImageDesignContentOne,
     ImageDesignContentTwo,
     ImageDesignContentThree,
+    ImageDesignContentFour,
+    ImageDesignContentFive,
   ];
   const printImages = [
     ImagePrintContentOne,
@@ -104,7 +109,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={designImages[id]}
-                backgroundImage={circle}
+                backgroundImage={circleDesign}
               />
             </Col>
           </Row>

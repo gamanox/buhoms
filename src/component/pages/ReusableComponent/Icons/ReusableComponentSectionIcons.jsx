@@ -95,11 +95,12 @@ export default function ReusableComponentSectionIcons({ nameSection }) {
 
   return (
     <Container
+      id="section-background"
       fluid
-      className="px-5 background-color-section-two spacing-between-sections"
+      className="px-5 bg-light spacing-between-sections"
     >
       <Row className="justify-content-center">
-        <Col xs={12} md={10}>
+        <Col lg={{ span: "10", offset: "1" }} sm={{ span: "12" }}>
           <h1 className="section-two-title">{getTitle(nameSection)}</h1>
           <p className="section-two-description">
             {getDescription(nameSection)}

@@ -3,8 +3,10 @@ import { Icon } from "antd";
 import { config } from "react-spring/renderprops";
 import { Container, Row, Col } from "react-bootstrap";
 import { Slug, Fade } from "../primitives/Primitives";
-import { useSpring, useTrail, animated } from "react-spring";
+import { useTrail, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import ReusableComponent from "../pages/ReusableComponent/ReusableComponent";
 import videoSectionDesign from "../../assets/video/DESIGN.mov";
 import videoSectionPrint from "../../assets/video/PRINT.mp4";
@@ -12,19 +14,15 @@ import videoSectionLogistics from "../../assets/video/LOGISTICA.mp4";
 import videoSectionPickandpack from "../../assets/video/PACKING1.mp4";
 import videoSectionProducts from "../../assets/video/PACKING2.mp4";
 import videoSectionWeAreOwl from "../../assets/video/videoSectionWeAreOwl.mp4";
-import poster from "../../assets/Images/WeAreOwl/imageHeader.png";
+import weareowlposter from "../../assets/Images/Buho_somos02.svg";
+import designposter from "../../assets/Images/Buho_DesignBck.svg";
+import printposter from "../../assets/Images/Buho_PrintBck.svg";
+import logisticsposter from "../../assets/Images/Buho_LogisticsBck1.svg";
+import pickpackposter from "../../assets/Images/Buho_PickBck.svg";
+import productsposter from "../../assets/Images/Productos.svg";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   const { t } = useTranslation();
-  const propsA = useSpring({
-    config: config.slow,
-    from: { transform: "translate3d(0px,0,0)", opacity: 1 },
-    to: [
-      { transform: `translate3d('${width}px',0,0)` },
-      { opacity: 0, display: "none" },
-    ],
-    onRest: () => {},
-  });
 
   const [toggleX, setToggleX] = useState(false);
 
@@ -33,18 +31,138 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
     x: toggleX ? 60 : 70,
   });
 
-  var isSafari =
-    /constructor/i.test(window.HTMLElement) ||
-    (function (p) {
-      return p.toString() === "[object SafariRemoteNotification]";
-    })(
-      !window["safari"] ||
-        (typeof safari !== "undefined" && window.safari.pushNotification)
-    );
-
-  const RenderCellComponent = (
+  const ActiveState = (
+    <Fade show={active} delay={active ? 100 : 0}>
+      <div>
+        <Slug delay={100}>
+          <div
+            className="close"
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            <Icon type="close" onClick={toggle} className="hidden-icon" />
+          </div>
+          <div className="content_top_section transform-objects">
+            <h1
+              className="title"
+              style={{
+                width: "150%",
+                transform: "translate(-15%,0)",
+              }}
+            >
+              {id !== 0 ? t(`home.landing.${id}.titulo`) : ""}
+            </h1>
+            <p className="parrafo">
+              {id !== 0 ? t(`home.landing.${id}.parrafo`) : ""}
+            </p>
+          </div>
+        </Slug>
+        <Container fluid className="w-100 h-100 m-0 p-0">
+          <Row
+            className="w-100 h-100 m-0 p-0"
+            style={{ zIndex: active ? 1000 : -1 }}
+          >
+            <Col id="header" className="video w-100 h-100 m-0 p-0 ">
+              <video
+                id="background-video"
+                loop
+                autoPlay
+                poster={
+                  {
+                    0: weareowlposter,
+                    1: designposter,
+                    2: printposter,
+                    3: logisticsposter,
+                    4: pickpackposter,
+                    5: productsposter,
+                  }[id]
+                }
+              >
+                <source
+                  src={
+                    {
+                      0: videoSectionWeAreOwl,
+                      1: videoSectionDesign,
+                      2: videoSectionPrint,
+                      3: videoSectionLogistics,
+                      4: videoSectionPickandpack,
+                      5: videoSectionProducts,
+                    }[id]
+                  }
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <p className="text-video centered text-light text-center d-sm-none d-md-block">
+                Explore
+                <br />
+                <FontAwesomeIcon icon={faArrowDown} size="2x" />
+              </p>
+            </Col>
+          </Row>
+          {
+            {
+              0: <ReusableComponent nameSection="we-are-owl" />,
+              1: <ReusableComponent nameSection="design" />,
+              2: <ReusableComponent nameSection="print" />,
+              3: <ReusableComponent nameSection="logistics" />,
+              4: <ReusableComponent nameSection="pickandpack" />,
+              5: <ReusableComponent nameSection="products" />,
+            }[id]
+          }
+        </Container>
+      </div>
+    </Fade>
+  );
+  const InActiveState = (
+    <Fade
+      show={!active}
+      from={{ opacity: 0, transform: "translate3d(0,140px,0)" }}
+      enter={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+      leave={{ opacity: 0, transform: "translate3d(0,-50px,0)" }}
+      delay={active ? 0 : 100}
+    >
+      <Container fluid className="w-100 h-100 m-0 p-0">
+        <Row className="w-100 h-100 m-0 p-0">
+          <Col className="w-100 h-100 m-0 p-0">
+            <div
+              className={`cell_bk_gradiente ${css_gra_hov} ${
+                active ? css_gra : ""
+              }`}
+            />
+            <div
+              className="h-100"
+              style={{
+                overflow: "hidden",
+              }}
+            >
+              {trail.map(({ x, height, ...rest }, index) => (
+                <animated.h1
+                  key={index}
+                  className="titulo-afuera h-100"
+                  style={{
+                    ...rest,
+                    transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
+                    height,
+                    display: !active ? "block" : "none",
+                    color: "#FFFFFF",
+                    pointerEvents: "none",
+                    paddingLeft: "2rem",
+                  }}
+                >
+                  {t(`home.landing.${id}.titulo_afuera`)}
+                </animated.h1>
+              ))}
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </Fade>
+  );
+  return (
     <div
-      className="h-100 m-0 p-0"
+      className="h-100 w-100 m-0 p-0"
       style={{
         overflow: active ? "scroll" : "hidden",
         overflowX: active ? "scroll" : "hidden",
@@ -61,154 +179,10 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
         onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
       >
-        <Container fluid className="h-100 m-0 p-0">
-          <Row className="h-100 m-0 p-0">
-            <Col className="h-100 m-0 p-0">
-              {!active ? (
-                <animated.div
-                  style={{
-                    width,
-                    height: window.innerHeight,
-                    position: "absolute",
-                    backgroundColor: "#000000",
-                    zIndex: 1,
-                    ...propsA,
-                  }}
-                />
-              ) : null}
-
-              <div
-                className={`cell_bk_gradiente ${css_gra_hov} ${
-                  active ? css_gra : ""
-                }`}
-              />
-
-              <div
-                className="h-100"
-                style={{
-                  overflow: "hidden",
-                }}
-              >
-                {trail.map(({ x, height, ...rest }, index) => (
-                  <animated.h1
-                    key={index}
-                    className="titulo-afuera h-100"
-                    style={{
-                      ...rest,
-                      transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
-                      height,
-                      display: !active ? "block" : "none",
-                      color: "#FFFFFF",
-                      pointerEvents: "none",
-                      paddingLeft: "2rem",
-                    }}
-                  >
-                    {t(`home.landing.${id}.titulo_afuera`)}
-                  </animated.h1>
-                ))}
-              </div>
-
-              <Fade show={active} delay={active ? 300 : 0}>
-                <div className="details">
-                  <Slug delay={400}>
-                    <div
-                      className="close"
-                      style={{
-                        cursor: "pointer",
-                      }}
-                    >
-                      <Icon
-                        type="close"
-                        onClick={toggle}
-                        className="hidden-icon"
-                      />
-                    </div>
-                    <Col
-                      className={`content_top_section ${
-                        isSafari ? "transform-objects" : ""
-                      }`}
-                    >
-                      <h1
-                        className="title"
-                        style={{
-                          width: "150%",
-                          transform: "translate(-15%,0)",
-                        }}
-                      >
-                        {t(`home.landing.${id}.titulo`)}
-                      </h1>
-                      <p className="parrafo">
-                        {t(`home.landing.${id}.parrafo`)}
-                      </p>
-                    </Col>
-                  </Slug>
-                </div>
-              </Fade>
-              {
-                {
-                  0: <ReusableComponent nameSection="we-are-owl" />,
-                  1: <ReusableComponent nameSection="design" />,
-                  2: <ReusableComponent nameSection="print" />,
-                  3: <ReusableComponent nameSection="logistics" />,
-                  4: <ReusableComponent nameSection="pickandpack" />,
-                  5: <ReusableComponent nameSection="products" />,
-                }[id]
-              }
-            </Col>
-          </Row>
-        </Container>
+        {ActiveState}
+        {InActiveState}
       </div>
     </div>
   );
-  // eslint-disable-next-line
-  const RenderCellComponentWithVideo = (
-    <Container
-      className="h-100 viewport-header"
-      style={{
-        overflow: active ? "scroll" : "hidden",
-        overflowX: active ? "scroll" : "hidden",
-      }}
-    >
-      <Row
-        key={id}
-        className={`cell`}
-        style={{
-          cursor: !active ? "pointer" : "auto",
-          zIndex: active ? 1000 : 1,
-        }}
-        onClick={!active ? toggle : undefined}
-        onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
-        onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
-      >
-        <Col>
-          <Row className="">
-            <Container className="h-100 m-0 p-0">
-              <Row>
-                <Col>
-                  <video id="background-video" loop autoPlay poster={poster}>
-                    <source
-                      src={
-                        {
-                          0: videoSectionWeAreOwl,
-                          1: videoSectionDesign,
-                          2: videoSectionPrint,
-                          3: videoSectionLogistics,
-                          4: videoSectionPickandpack,
-                          5: videoSectionProducts,
-                        }[id]
-                      }
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </Col>
-              </Row>
-            </Container>
-          </Row>
-        </Col>
-      </Row>
-    </Container>
-  );
-  return RenderCellComponent;
 };
 export default Cell;
