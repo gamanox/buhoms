@@ -1,21 +1,20 @@
-
-import React from 'react'
-import PropTypes from 'prop-types'
-import Measure from 'react-measure'
-import { Transition, animated, interpolate } from 'react-spring/renderprops'
+import React from "react";
+import PropTypes from "prop-types";
+import Measure from "react-measure";
+import { Transition, animated, interpolate } from "react-spring/renderprops";
 
 const styles = {
-  outer: { position: 'relative', width: '100%', height: '100%' },
+  outer: { position: "relative", width: "100%", height: "100%" },
   inner: {
-    position: 'relative',
-    width: '100%',
-    minHeight: '100%',
+    position: "relative",
+    width: "100%",
+    minHeight: "100%",
   },
   cell: {
-    position: 'absolute',
-    willChange: 'transform, width, height, opacity',
+    position: "absolute",
+    willChange: "transform, width, height, opacity",
   },
-}
+};
 
 export default class Grid extends React.Component {
   static propTypes = {
@@ -28,7 +27,7 @@ export default class Grid extends React.Component {
     heights: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
     lockScroll: PropTypes.bool,
     closeDelay: PropTypes.number,
-  }
+  };
   static defaultProps = {
     occupySpace: false,
     columns: 6,
@@ -37,42 +36,42 @@ export default class Grid extends React.Component {
     heights: 400,
     lockScroll: false,
     closeDelay: 0,
-  }
-  state = { width: 0, height: 0, open: undefined, lastOpen: undefined }
-  scrollOut = e => {
+  };
+  state = { width: 0, height: 0, open: undefined, lastOpen: undefined };
+  scrollOut = (e) => {
     if (!this.props.lockScroll) {
-      this.state.open && this.toggle(undefined)
-      this.clicked = false
+      this.state.open && this.toggle(undefined);
+      this.clicked = false;
     }
-  }
-  toggle = key =>
+  };
+  toggle = (key) =>
     this.setState(
-      state => ({
+      (state) => ({
         lastOpen: state.open,
         open: state.open === key ? undefined : key,
       }),
       () => (this.clicked = true)
-    )
+    );
   resize = (width, height, props) =>
     this.setState({
       [width]: props.client.width,
       [height]: props.client.height,
-    })
-  resizeOuter = props => this.resize('widthOuter', 'heightOuter', props)
-  resizeInner = props => this.resize('width', 'height', props)
+    });
+  resizeOuter = (props) => this.resize("widthOuter", "heightOuter", props);
+  resizeInner = (props) => this.resize("width", "height", props);
   update = ({ key, x, y, width, height }) => {
-    const open = this.state.open === key
+    const open = this.state.open === key;
     return {
       opacity: this.state.open && !open ? 0 : 1,
       x: open ? this.outerRef.scrollLeft : x,
       y: open ? this.outerRef.scrollTop : y,
       width: open ? this.state.widthOuter : width,
       height: open ? this.state.heightOuter : height,
-    }
-  }
+    };
+  };
 
   componentDidUpdate() {
-    this.clicked = false
+    this.clicked = false;
   }
 
   render() {
@@ -90,47 +89,44 @@ export default class Grid extends React.Component {
       closeDelay,
       lockScroll,
       ...rest
-    } = this.props
-    let { lastOpen, open } = this.state
-    let column = 0
-    let columnWidths = new Array(columns).fill(0)
-    let columnHeights = new Array(columns).fill(0)
-
+    } = this.props;
+    let { lastOpen, open } = this.state;
+    let column = 0;
+    let columnWidths = new Array(columns).fill(0);
+    let columnHeights = new Array(columns).fill(0);
 
     let displayData = data.map((child, i) => {
       let index = occupySpace
         ? columnHeights.indexOf(Math.min(...columnHeights))
-        : column++ % columns
+        : column++ % columns;
 
       //console.log("index ", index)
 
       //console.log("occupySpace ", occupySpace)
 
-
-      let cellWidth = typeof widths === 'function' ? widths(child) : widths
-
+      let cellWidth = typeof widths === "function" ? widths(child) : widths;
 
       //console.log("cellWidth ", cellWidth)
 
-      var left = 0
+      var left = 0;
 
       if (columns === 1) {
-        cellWidth = window.innerWidth
-        left = cellWidth * index
+        cellWidth = window.innerWidth;
+        left = cellWidth * index;
       } else {
-        cellWidth = typeof widths === 'function' ? widths(child) : widths
+        cellWidth = typeof widths === "function" ? widths(child) : widths;
         columnWidths.map((child, i) => {
-          return left += child
-        })
+          return (left += child);
+        });
       }
 
       //console.log("left ", left)
 
-      columnWidths[index] += cellWidth + margin
+      columnWidths[index] += cellWidth + margin;
 
-      let top = columnHeights[index] + margin
-      let height = typeof heights === 'function' ? heights(child) : heights
-      columnHeights[index] += height + margin
+      let top = columnHeights[index] + margin;
+      let height = typeof heights === "function" ? heights(child) : heights;
+      columnHeights[index] += height + margin;
       return {
         x: left,
         y: top,
@@ -138,15 +134,16 @@ export default class Grid extends React.Component {
         height,
         key: keys(child),
         object: child,
-      }
-    })
-    const overflow = lockScroll ? (open ? 'hidden' : 'auto') : 'auto'
-    const height = Math.max(...columnHeights) + margin
+      };
+    });
+    const overflow = lockScroll ? (open ? "hidden" : "auto") : "auto";
+    const height = Math.max(...columnHeights) + margin;
     return (
       <Measure
         client
-        innerRef={r => (this.outerRef = r)}
-        onResize={this.resizeOuter}>
+        innerRef={(r) => (this.outerRef = r)}
+        onResize={this.resizeOuter}
+      >
         {({ measureRef }) => (
           <div
             ref={measureRef}
@@ -154,17 +151,19 @@ export default class Grid extends React.Component {
             {...rest}
             onScroll={this.scrollOut}
             onWheel={this.scrollOut}
-            onTouchMove={this.scrollOut}>
+            onTouchMove={this.scrollOut}
+          >
             <Measure
               client
-              innerRef={r => (this.innerRef = r)}
-              onResize={this.resizeInner}>
+              innerRef={(r) => (this.innerRef = r)}
+              onResize={this.resizeInner}
+            >
               {({ measureRef }) => (
                 <div ref={measureRef} style={{ ...styles.inner, height }}>
                   <Transition
                     native
                     items={displayData}
-                    keys={d => d.key}
+                    keys={(d) => d.key}
                     from={{ opacity: 0 }}
                     leave={{ opacity: 0 }}
                     enter={this.update}
@@ -173,7 +172,8 @@ export default class Grid extends React.Component {
                     config={{
                       ...config.default,
                       delay: this.clicked && !open ? closeDelay : 0,
-                    }}>
+                    }}
+                  >
                     {(c, i) => ({ opacity, x, y, width, height }) => (
                       <animated.div
                         style={{
@@ -188,10 +188,8 @@ export default class Grid extends React.Component {
                             (x, y) => `translate3d(${x}px,${y}px, 0)`
                           ),
                         }}
-                        children={children(
-                          c.object,
-                          open === c.key,
-                          () => this.toggle(c.key)
+                        children={children(c.object, open === c.key, () =>
+                          this.toggle(c.key)
                         )}
                       />
                     )}
@@ -202,6 +200,6 @@ export default class Grid extends React.Component {
           </div>
         )}
       </Measure>
-    )
+    );
   }
 }
