@@ -146,7 +146,9 @@ const App = () => {
                 event="click"
                 position={{ bottom: 0, right: 120 }}
                 mainButtonStyles={{
-                  backgroundColor: "#000000",
+                  backgroundColor: "rgba(255, 255, 255, 0.5)",
+                  border: "1rem",
+                  borderColor: "#FFFFFF",
                   width: 56,
                   borderRadius: 56,
                 }}
@@ -159,7 +161,9 @@ const App = () => {
                 event="click"
                 position={{ bottom: 0, left: 120 }}
                 mainButtonStyles={{
-                  backgroundColor: "#000000",
+                  backgroundColor: "rgba(255, 255, 255, 0.5)",
+                  border: "5px",
+                  borderColor: "#FFFFFF",
                   width: 56,
                   borderRadius: 56,
                 }}
