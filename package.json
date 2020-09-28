@@ -44,7 +44,7 @@
     ]
   },
   "scripts": {
-    "start": "HTTPS=true react-scripts start",
+    "start": "react-scripts start",
     "clean": "rm -rf node_modules build .firebase",
     "reinstall": "npm run clean && npm install",
     "build": "react-scripts build",

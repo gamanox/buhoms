@@ -32,7 +32,11 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   });
 
   const ActiveState = (
-    <Fade show={active} delay={active ? 100 : 0}>
+    <Fade
+      show={active}
+      delay={active ? 100 : 0}
+      className={`cell_bk_gradiente ${css_gra_hov} ${active ? css_gra : ""}`}
+    >
       <div>
         <Slug delay={100}>
           <div
@@ -123,14 +127,24 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
       leave={{ opacity: 0, transform: "translate3d(0,-50px,0)" }}
       delay={active ? 0 : 100}
     >
-      <Container fluid className="w-100 h-100 m-0 p-0">
+      <Container fluid className="">
+        <Row className="">
+          <Col className="video">
+            {id === 0 && (
+              <video
+                loop
+                autoPlay
+                poster={weareowlposter}
+                className="video-cover"
+              >
+                <source src={videoSectionWeAreOwl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+          </Col>
+        </Row>
         <Row className="w-100 h-100 m-0 p-0">
           <Col className="w-100 h-100 m-0 p-0">
-            <div
-              className={`cell_bk_gradiente ${css_gra_hov} ${
-                active ? css_gra : ""
-              }`}
-            />
             <div
               className="h-100"
               style={{
@@ -151,7 +165,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                     paddingLeft: "2rem",
                   }}
                 >
-                  {t(`home.landing.${id}.titulo_afuera`)}
+                  {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
                 </animated.h1>
               ))}
             </div>
@@ -162,7 +176,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
   );
   return (
     <div
-      className="h-100 w-100 m-0 p-0"
+      className="h-100 w-100 m-0 p-0 bg-dark"
       style={{
         overflow: active ? "scroll" : "hidden",
         overflowX: active ? "scroll" : "hidden",
