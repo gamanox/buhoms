@@ -30,13 +30,8 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
     config,
     x: toggleX ? 60 : 70,
   });
-
   const ActiveState = (
-    <Fade
-      show={active}
-      delay={active ? 100 : 0}
-      className={`cell_bk_gradiente ${css_gra_hov} ${active ? css_gra : ""}`}
-    >
+    <Fade show={active} delay={active ? 100 : 0}>
       <div>
         <Slug delay={100}>
           <div
@@ -163,6 +158,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                     color: "#FFFFFF",
                     pointerEvents: "none",
                     paddingLeft: "2rem",
+                    zIndex: 1000,
                   }}
                 >
                   {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
@@ -193,8 +189,13 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
         onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
       >
-        {ActiveState}
         {InActiveState}
+        <div
+          className={`cell_bk_gradiente ${css_gra_hov} ${
+            active ? css_gra : ""
+          }`}
+        />
+        {ActiveState}
       </div>
     </div>
   );
