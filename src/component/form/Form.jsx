@@ -1,38 +1,57 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Row, Col, Form, Button, Image } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
 
-import email from "../../assets/img/component/formulario/email.svg";
-import facebook from "../../assets/img/component/formulario/facebook.svg";
-import insta from "../../assets/img/component/formulario/insta.svg";
-import telefono from "../../assets/img/component/formulario/telefono.svg";
-import ubicacion from "../../assets/img/component/formulario/ubicacion.svg";
+import { IconsComponentsEmail } from "../IconsComponents/IconsComponentsEmail";
+import { IconsCompoenentsPhone } from "../IconsComponents/IconsCompoenentsPhone";
+import { IconsComponentsFacebook } from "../IconsComponents/IconsComponentsFacebook";
+import { IconsComponentsInstagram } from "../IconsComponents/IconsComponentsInstagram";
+import { IconsComponentsPin } from "../IconsComponents/IconsComponentsPin";
+
+function fillColor(sectionName) {
+  switch (sectionName) {
+    case "we-are-owl":
+      return "#00FF00";
+    case "design":
+      return "#00ffea";
+
+    default:
+      return "#FFF000";
+      break;
+  }
+}
 
 const Formulario = ({ sectionName }) => {
   const { t } = useTranslation();
+
   return (
     <Row className="Formulario pt-5">
       <Col xs={{ span: 10, offset: 1 }} md={(5, { span: 5, offset: 1 })}>
         <h1 className={`titulo text-white `}>{t("Formulario.titulo")}</h1>
         <Row>
-          <Col xs={{ span: 10, offset: 1 }}>
-            <Image src={ubicacion} className="center" />
+          <Col xs={{ span: 10, offset: 1 }} sm={12} lg={6} className="ml-0">
+            <IconsComponentsPin fill={fillColor(sectionName)} />
             <p className="info">{t("Formulario.ubicacion")}</p>
             <p className="info">{t("Formulario.link")}</p>
           </Col>
-          <Col xs={{ span: 10, offset: 1 }}>
-            <Image src={telefono} />
+          <Col xs={{ span: 10, offset: 1 }} sm={12} lg={6} className="ml-0">
+            <IconsCompoenentsPhone fill={fillColor(sectionName)} />
             <p className="info">{t("Formulario.numero")}</p>
-            <Image src={email} />
+            <IconsComponentsEmail fill={fillColor(sectionName)} />
             <p className="info">{t("Formulario.email")}</p>
           </Col>
         </Row>
         <Row>
-          <Col xs={{ span: 10, offset: 1 }}>
-            <Image src={facebook} />
-            <Image src={insta} className="ml-3" />
+          <Col className="float-right" sm="auto">
+            <IconsComponentsFacebook fill={fillColor(sectionName)} />
+          </Col>
+          <Col sm="auto">
+            <IconsComponentsInstagram fill={fillColor(sectionName)} />
           </Col>
         </Row>
+        <br />
+        <br />
+        <br />
       </Col>
       <Col xs={{ span: 10, offset: 1 }} md={(5, { span: 5, offset: 0 })}>
         <h1 className={`titulo2 ${sectionName} `}>{t("Formulario.titulo2")}</h1>

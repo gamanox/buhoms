@@ -71,5 +71,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "devDependencies": {
+    "file-loader": "^6.1.0"
   }
 }
