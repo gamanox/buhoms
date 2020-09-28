@@ -17,7 +17,6 @@ function fillColor(sectionName) {
 
     default:
       return "#FFF000";
-      break;
   }
 }
 
