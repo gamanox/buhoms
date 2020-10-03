@@ -1,8 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import ReusableComponentCardParalax from "./ReusableComponentCardParalax";
-import circle from "../../../../assets/img/pages/somos_buho/VectorCirculo.svg";
-import circleDesign from "../../../../assets/img/pages/somos_buho/VectorCirculoDesign.svg";
 import ImageWeAreOwlComponentOne from "../../../../assets/Images/WeAreOwl/imageContentOne.png";
 import ImageWeAreOwlComponentTwo from "../../../../assets/Images/WeAreOwl/imageContentTwo.png";
 
