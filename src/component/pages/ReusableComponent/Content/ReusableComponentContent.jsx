@@ -17,6 +17,7 @@ import ImagePrintContentTwo from "../../../../assets/Images/Print/imagePrintCont
 import ImagePrintContentThree from "../../../../assets/Images/Print/imagePrintContentThree.png";
 import ImagePrintContentFour from "../../../../assets/Images/Print/imagePrintContentFour.png";
 import ImagePrintContentFive from "../../../../assets/Images/Print/imagePrintContentFive.png";
+import ImagePrintContentSix from "../../../../assets/Images/Print/imagePrintContentSix.png";
 
 import ImageLogisticsContentOne from "../../../../assets/Images/Logistics/imageLogisticsContentOne.png";
 import ImageLogisticsContentTwo from "../../../../assets/Images/Logistics/imageLogisticsContentTwo.png";
@@ -50,6 +51,7 @@ export default function ReusableComponentContent({ nameSection }) {
     ImagePrintContentThree,
     ImagePrintContentFour,
     ImagePrintContentFive,
+    ImagePrintContentSix,
   ];
   const logisticsImages = [
     ImageLogisticsContentOne,
@@ -83,7 +85,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col md={8} sm={12}>
               <ReusableComponentCardParalax
                 mainPicture={owlImages[id]}
-                backgroundImage={circle}
+                sectionName={nameSection}
               />
             </Col>
           </Row>
@@ -109,7 +111,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={designImages[id]}
-                backgroundImage={circleDesign}
+                sectionName={nameSection}
               />
             </Col>
           </Row>
@@ -135,7 +137,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={printImages[id]}
-                backgroundImage={circle}
+                sectionName={nameSection}
               />
             </Col>
           </Row>
@@ -161,7 +163,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={logisticsImages[id]}
-                backgroundImage={circle}
+                sectionName={nameSection}
               />
             </Col>
           </Row>
@@ -187,7 +189,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col md={8} sm={12} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={pickAndPackImages[id]}
-                backgroundImage={circle}
+                sectionName={nameSection}
               />
             </Col>
           </Row>
@@ -213,7 +215,7 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col sm={12} md={8} className="center-objects">
               <ReusableComponentCardParalax
                 mainPicture={ImageProductContentOne}
-                backgroundImage={circle}
+                sectionName={nameSection}
               />
             </Col>
           </Row>
