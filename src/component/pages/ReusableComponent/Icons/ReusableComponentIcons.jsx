@@ -39,7 +39,7 @@ export default function ReusableComponentIcons({
   const iconsPrint = i18n
     .t("print.section-two", { returnObjects: true })
     .map((item, i) => (
-      <Col key={i} sm={12} md="auto" className="text-center mx-auto d-block">
+      <Col key={i} sm={12} md="2" className="text-center mx-auto d-block">
         <Figure>
           <Figure.Image src={iconImages[i]} className="img-fluid" />
           <Figure.Caption
@@ -53,7 +53,7 @@ export default function ReusableComponentIcons({
   const iconsProducts = i18n
     .t("products.section-two", { returnObjects: true })
     .map((item, i) => (
-      <Col key={i} sm={12} md="auto" className="text-center mx-auto d-block">
+      <Col key={i} sm={12} md="2" className="text-center mx-auto d-block">
         <Figure>
           <Figure.Image src={iconImages[i]} className="img-fluid" />
           <Figure.Caption
