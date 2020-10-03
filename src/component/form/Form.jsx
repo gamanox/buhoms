@@ -14,9 +14,17 @@ function fillColor(sectionName) {
       return "#00FF00";
     case "design":
       return "#00ffea";
+    case "print":
+      return "#FF0054";
+    case "logistics":
+      return "#FFF000";
+    case "pickandpack":
+      return "#A31BFF";
+    case "products":
+      return "#0047FF";
 
     default:
-      return "#FFF000";
+      return "#00FF00";
   }
 }
 
@@ -28,20 +36,38 @@ const Formulario = ({ sectionName }) => {
       <Col xs={{ span: 10, offset: 1 }} md={(5, { span: 5, offset: 1 })}>
         <h1 className={`titulo text-white `}>{t("Formulario.titulo")}</h1>
         <Row>
-          <Col xs={{ span: 10, offset: 1 }} sm={12} lg={6} className="ml-0">
-            <IconsComponentsPin fill={fillColor(sectionName)} />
-            <p className="info">{t("Formulario.ubicacion")}</p>
-            <p className="info">{t("Formulario.link")}</p>
+          <Col xs={{ span: 10, offset: 1 }} sm={12} lg={6} className="ml-0 ">
+            <Row>
+              <Col xs={12} sm={12} lg={2}>
+                <IconsComponentsPin fill={fillColor(sectionName)} />
+              </Col>
+              <Col xs={12} sm={12} lg={10}>
+                <p className="info">{t("Formulario.ubicacion")}</p>
+                <p className="info">{t("Formulario.link")}</p>
+              </Col>
+            </Row>
           </Col>
           <Col xs={{ span: 10, offset: 1 }} sm={12} lg={6} className="ml-0">
-            <IconsCompoenentsPhone fill={fillColor(sectionName)} />
-            <p className="info">{t("Formulario.numero")}</p>
-            <IconsComponentsEmail fill={fillColor(sectionName)} />
-            <p className="info">{t("Formulario.email")}</p>
+            <Row>
+              <Col xs={12} sm={12} lg={2}>
+                <IconsCompoenentsPhone fill={fillColor(sectionName)} />
+              </Col>
+              <Col xs={12} sm={12} lg={10}>
+                <p className="info">{t("Formulario.numero")}</p>
+              </Col>
+            </Row>
+            <Row className="mt-3">
+              <Col xs={12} sm={12} lg={2}>
+                <IconsComponentsEmail fill={fillColor(sectionName)} />
+              </Col>
+              <Col xs={12} sm={12} lg={10}>
+                <p className="info">{t("Formulario.email")}</p>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row>
-          <Col className="float-right" sm="auto">
+          <Col className="float-rigth ml-5" sm="auto">
             <IconsComponentsFacebook fill={fillColor(sectionName)} />
           </Col>
           <Col sm="auto">
