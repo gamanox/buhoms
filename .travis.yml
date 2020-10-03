@@ -17,6 +17,7 @@ script:
   - npm run build
 
 after_success:
+  - export NODE_ENV=production
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive --project buho-beta-dev -m "This site is being hosted from the development branch."
   - npm run clean
 

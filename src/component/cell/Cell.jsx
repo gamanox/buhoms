@@ -22,6 +22,7 @@ import pickpackposter from "../../assets/Images/Buho_PickBck.svg";
 import productsposter from "../../assets/Images/Productos.svg";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
+  console.log(active);
   const { t } = useTranslation();
 
   const [toggleX, setToggleX] = useState(false);
@@ -125,16 +126,17 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
       <Container fluid className="">
         <Row className="">
           <Col className="video">
-            {id === 0 && (
-              <video
-                loop
-                autoPlay
-                poster={weareowlposter}
-                className="video-cover"
-              >
-                <source src={videoSectionWeAreOwl} type="video/mp4" />
+            {id === 0 ? (
+              <video loop autoPlay className="video-cover">
+                <source
+                  src={videoSectionWeAreOwl}
+                  poster={weareowlposter}
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
+            ) : (
+              ""
             )}
           </Col>
         </Row>
