@@ -31,6 +31,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
     config,
     x: toggleX ? 60 : 70,
   });
+  // eslint-disable-next-line
   const ActiveState = (
     <Fade show={active} delay={active ? 100 : 0}>
       <div>
@@ -58,12 +59,12 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
             </p>
           </div>
         </Slug>
-        <Container fluid className="w-100 h-100 m-0 p-0">
+        <Container fluid className="container-size">
           <Row
-            className="w-100 h-100 m-0 p-0"
+            className="container-size"
             style={{ zIndex: active ? 1000 : -1 }}
           >
-            <Col id="header" className="video w-100 h-100 m-0 p-0 ">
+            <Col id="header" className="video container-size">
               <video
                 id="background-video"
                 loop
@@ -115,66 +116,137 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
       </div>
     </Fade>
   );
-  const InActiveState = (
-    <Fade
-      show={!active}
-      from={{ opacity: 0, transform: "translate3d(0,140px,0)" }}
-      enter={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-      leave={{ opacity: 0, transform: "translate3d(0,-50px,0)" }}
-      delay={active ? 0 : 100}
-    >
-      <Container fluid className="">
-        <Row className="">
-          <Col className="video">
-            {id === 0 ? (
-              <video loop autoPlay className="video-cover">
-                <source
-                  src={videoSectionWeAreOwl}
-                  poster={weareowlposter}
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            ) : (
-              ""
-            )}
-          </Col>
-        </Row>
-        <Row className="w-100 h-100 m-0 p-0">
-          <Col className="w-100 h-100 m-0 p-0">
-            <div
-              className="h-100"
-              style={{
-                overflow: "hidden",
-              }}
-            >
-              {trail.map(({ x, height, ...rest }, index) => (
-                <animated.h1
-                  key={index}
-                  className="titulo-afuera h-100"
+  const Outside = () => {
+    return (
+      <div
+        className="outside-height outside-overflow"
+        style={{ display: `${active ? `none` : `inline`}` }}
+      >
+        <div className="video">
+          {id === 0 ? (
+            <video loop autoPlay className="video-cover">
+              <source
+                src={videoSectionWeAreOwl}
+                poster={weareowlposter}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            ""
+          )}
+        </div>
+        {trail.map(({ x, height, ...rest }, index) => (
+          <animated.h1
+            key={index}
+            className="titulo-afuera title-height-outside"
+            style={{
+              ...rest,
+              transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
+              height,
+              display: !active ? "block" : "none",
+              color: "#FFFFFF",
+              pointerEvents: "none",
+              paddingLeft: "2rem",
+              zIndex: 1000,
+            }}
+          >
+            {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
+          </animated.h1>
+        ))}
+      </div>
+    );
+  };
+  const Inside = () => {
+    return (
+      <Container fluid className="container-size">
+        <Fade show={active} delay={active ? 300 : 0}>
+          <div className="container-size">
+            <Row>
+              <Slug delay={400}>
+                <div
+                  className="close"
                   style={{
-                    ...rest,
-                    transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
-                    height,
-                    display: !active ? "block" : "none",
-                    color: "#FFFFFF",
-                    pointerEvents: "none",
-                    paddingLeft: "2rem",
-                    zIndex: 1000,
+                    cursor: "pointer",
                   }}
                 >
-                  {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
-                </animated.h1>
-              ))}
-            </div>
-          </Col>
-        </Row>
+                  <Icon type="close" onClick={toggle} className="hidden-icon" />
+                </div>
+                <div
+                  className="content_top_section transform-objects"
+                  style={{ zIndex: active ? 1000 : -1 }}
+                >
+                  <h1 className="inside-title">
+                    {t(`home.landing.${id}.titulo`)}
+                  </h1>
+                  <p className="inside-paragraph">
+                    {t(`home.landing.${id}.parrafo`)}
+                  </p>
+                </div>
+              </Slug>
+            </Row>
+            <Row
+              className="container-size"
+              style={{ zIndex: active ? 1000 : -1 }}
+            >
+              <Col id="header" className="video container-size">
+                <video
+                  id="background-video"
+                  loop
+                  autoPlay
+                  poster={
+                    {
+                      0: weareowlposter,
+                      1: designposter,
+                      2: printposter,
+                      3: logisticsposter,
+                      4: pickpackposter,
+                      5: productsposter,
+                    }[id]
+                  }
+                >
+                  <source
+                    src={
+                      {
+                        0: videoSectionWeAreOwl,
+                        1: videoSectionDesign,
+                        2: videoSectionPrint,
+                        3: videoSectionLogistics,
+                        4: videoSectionPickandpack,
+                        5: videoSectionProducts,
+                      }[id]
+                    }
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <p className="text-video centered text-light text-center d-sm-none d-md-block">
+                  Explore
+                  <br />
+                  <FontAwesomeIcon icon={faArrowDown} size="2x" />
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              {
+                {
+                  0: <ReusableComponent nameSection="we-are-owl" />,
+                  1: <ReusableComponent nameSection="design" />,
+                  2: <ReusableComponent nameSection="print" />,
+                  3: <ReusableComponent nameSection="logistics" />,
+                  4: <ReusableComponent nameSection="pickandpack" />,
+                  5: <ReusableComponent nameSection="products" />,
+                }[id]
+              }
+            </Row>
+          </div>
+        </Fade>
       </Container>
-    </Fade>
-  );
+    );
+  };
   return (
     <div
-      className="h-100 w-100 m-0 p-0 bg-dark"
+      className="container-size bg-dark"
       style={{
         overflow: active ? "scroll" : "hidden",
         overflowX: active ? "scroll" : "hidden",
@@ -191,94 +263,20 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
         onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
       >
-        {ActiveState}
-        {InActiveState}
-        {/* <Container fluid className="container-size">
+        <Container fluid className="container-size">
           <Row className="container-size">
             <Col className="container-size">
               <div
                 className={`cell_bk_gradiente ${css_gra_hov} ${
                   active ? css_gra : ""
-                }`}
+                } `}
+                style={{ display: `${active ? `none` : `inline`}` }}
               />
-              <div className="inactive-state-height inactive-state-overflow">
-                {trail.map(({ x, height, ...rest }, index) => (
-                  <animated.h1
-                    key={index}
-                    className="titulo-afuera title-height-outside"
-                    style={{
-                      ...rest,
-                      transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
-                      height,
-                      display: !active ? "block" : "none",
-                      color: "#FFFFFF",
-                      pointerEvents: "none",
-                      paddingLeft: "2rem",
-                    }}
-                  >
-                    {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
-                  </animated.h1>
-                ))}
-                <div className="video">
-                  {id === 0 ? (
-                    <video loop autoPlay className="video-cover">
-                      <source
-                        src={videoSectionWeAreOwl}
-                        poster={weareowlposter}
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </div>
-              <Fade
-                show={!active}
-                from={{ opacity: 0, transform: "translate3d(0,140px,0)" }}
-                enter={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                leave={{ opacity: 0, transform: "translate3d(0,-50px,0)" }}
-                delay={active ? 0 : 100}
-              >
-                <div className="details">
-                  <Slug delay={400}>
-                    <div
-                      className="close"
-                      style={{
-                        cursor: "pointer",
-                      }}
-                    >
-                      <Icon
-                        type="close"
-                        onClick={toggle}
-                        className="hidden-icon"
-                      />
-                    </div>
-                    <Col className="content_top_section">
-                      <h1 className="title">
-                        {t(`home.landing.${id}.titulo`)}
-                      </h1>
-                      <p className="parrafo">
-                        {t(`home.landing.${id}.parrafo`)}
-                      </p>
-                    </Col>
-                  </Slug>
-                </div>
-              </Fade>
-              {
-                {
-                  0: <ReusableComponent nameSection="we-are-owl" />,
-                  1: <ReusableComponent nameSection="design" />,
-                  2: <ReusableComponent nameSection="print" />,
-                  3: <ReusableComponent nameSection="logistics" />,
-                  4: <ReusableComponent nameSection="pickandpack" />,
-                  5: <ReusableComponent nameSection="products" />,
-                }[id]
-              }
+              <Outside />
+              <Inside />
             </Col>
           </Row>
-        </Container> */}
+        </Container>
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ export default function ReusableComponentHeader({ nameSection }) {
       style={{ background: "rgba(15, 16, 18, 1)" }}
     >
       <Col lg={{ span: "10" }} sm={{ span: "12" }} className="py-5">
-        <h1 className={`${nameSection}`}>{getTitle(nameSection)}</h1>
+        <h1 className={`title ${nameSection}`}>{getTitle(nameSection)}</h1>
         <p className="section-one-description text-justify">
           {getDescription(nameSection)}
         </p>

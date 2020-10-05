@@ -1,14 +1,20 @@
+
+@font-face
+    font-family: "DTLHaarlemmerD"
+    src: url("../../assets/fonts/DTLHaarlemmerD/DTLHaarlemmerD/DTLHaarlemmerD.bmap") format("bmap")
+
 @font-face
     font-family: "Graphik"
-    src: url("../../assets/fonts/Graphik/Graphik-Regular.otf") format("opentype")
+    src: url("../../assets/fonts/Graphik/Graphik-Regular.otf") format("otf")
+
+$font-italic: "DTLHaarlemmerD"
+$font-body: "Graphik"
 
 $white: #FFFFFF
 $black: #000000
 
-$font-graphik:  "Graphik"
-
 .titulo-afuera
-    font-family: $font-graphik
+    font-family: $font-body
     font-style: normal
     font-weight: 500
     font-size: 70px
@@ -16,23 +22,23 @@ $font-graphik:  "Graphik"
 
 .content_top_section
     position: absolute
-    // top: calc(50% - 400px)
+    top: 30%
     left: calc(50% - 350px)
     width: 700px
     text-align: center
     height: 100px
 
-.content_top_section .title
-    font-family: $font-graphik
+.content_top_section h1.inside-title
+    font-family: $font-body
     font-style: normal
     font-weight: 500
-    font-size: 110px
-    line-height: 110px
+    font-size: 150px
+    line-height: 210px
     color: $white
     margin: 0
 
-.content_top_section .parrafo
-    font-family: $font-graphik
+.content_top_section p.inside-paragraph
+    font-family: $font-body
     font-style: normal
     font-weight: normal
     font-size: 20px
@@ -65,7 +71,7 @@ $font-graphik:  "Graphik"
     transition(opacity, 1s)
 
 .cell_bk1
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/Images/Buho_somos02.svg")
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url("../../assets/Images/Buho_somos02.svg")
 
 .cell_bk1_grad
     background: linear-gradient(192.75deg, rgba(0, 255, 0, 0.9) 46.88%, rgba(3, 254, 215, 0.9) 100%)
