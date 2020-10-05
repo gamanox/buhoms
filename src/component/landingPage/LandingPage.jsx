@@ -10,6 +10,7 @@ import { Fab } from "react-tiny-fab";
 import "react-tiny-fab/dist/styles.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { IconFabComponent } from "../IconFabComponent/IconFabComponent";
 
 const App = () => {
   const [size, setSize] = useState([769, 0]);
@@ -106,16 +107,26 @@ const App = () => {
               keys={(d) => d.id}
               // Can be a fixed value or an individual data accessor
               widths={(d) => {
-                var width = window.innerWidth / 3;
-                var thirdScreen = width * 2;
-                if (0 >= d.id) {
-                  return thirdScreen;
+                if (window.innerWidth <= 480) {
+                  return window.innerWidth;
                 } else {
-                  return width;
+                  var width = window.innerWidth / 3;
+                  var thirdScreen = width * 2;
+                  if (0 >= d.id) {
+                    return thirdScreen;
+                  } else {
+                    return width;
+                  }
                 }
               }}
               // Can be a fixed value or an individual data accessor
-              heights={window.innerHeight}
+              heights={() => {
+                if (window.innerWidth <= 480) {
+                  return window.innerHeight * 0.4;
+                } else {
+                  return window.innerHeight;
+                }
+              }}
               // Number of columns
               columns={size[0] > 768 ? 6 : 1}
               // Space between elements
@@ -130,6 +141,7 @@ const App = () => {
               {(data, active, toggle) => {
                 return (
                   <Cell
+                    className="clear-fix"
                     {...data}
                     active={active}
                     toggle={toggle}
@@ -145,30 +157,28 @@ const App = () => {
               <Fab
                 event="click"
                 position={{ bottom: 0, right: 120 }}
-                mainButtonStyles={{
-                  backgroundColor: "rgba(255, 255, 255, 0.5)",
-                  border: "1rem",
-                  borderColor: "#FFFFFF",
-                  width: 56,
-                  borderRadius: 56,
-                }}
                 onClick={handleClickRight}
-                icon="→"
+                mainButtonStyles={{
+                  backgroundColor: "rgba(255, 255, 255, 0.01) ",
+                  boxShadow: "0 0 0 0 rgba(255, 255, 255, 0.01)",
+                  borderStyle: "solid",
+                  borderWidth: "1px",
+                }}
+                icon={<IconFabComponent position="right" />}
               />
             </div>
             <div id="left-button">
               <Fab
                 event="click"
                 position={{ bottom: 0, left: 120 }}
-                mainButtonStyles={{
-                  backgroundColor: "rgba(255, 255, 255, 0.5)",
-                  border: "5px",
-                  borderColor: "#FFFFFF",
-                  width: 56,
-                  borderRadius: 56,
-                }}
                 onClick={handleClickLeft}
-                icon="←"
+                mainButtonStyles={{
+                  backgroundColor: "rgba(255, 255, 255, 0.01) ",
+                  boxShadow: "0 0 0 0 rgba(255, 255, 255, 0.01)",
+                  borderStyle: "solid",
+                  borderWidth: "1px",
+                }}
+                icon={<IconFabComponent position="left" />}
               />
             </div>
           </Route>
