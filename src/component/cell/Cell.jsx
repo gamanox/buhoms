@@ -191,7 +191,9 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
         onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
       >
-        <Container fluid className="container-size">
+        {ActiveState}
+        {InActiveState}
+        {/* <Container fluid className="container-size">
           <Row className="container-size">
             <Col className="container-size">
               <div
@@ -232,10 +234,51 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                   )}
                 </div>
               </div>
-              {ActiveState}
+              <Fade
+                show={!active}
+                from={{ opacity: 0, transform: "translate3d(0,140px,0)" }}
+                enter={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                leave={{ opacity: 0, transform: "translate3d(0,-50px,0)" }}
+                delay={active ? 0 : 100}
+              >
+                <div className="details">
+                  <Slug delay={400}>
+                    <div
+                      className="close"
+                      style={{
+                        cursor: "pointer",
+                      }}
+                    >
+                      <Icon
+                        type="close"
+                        onClick={toggle}
+                        className="hidden-icon"
+                      />
+                    </div>
+                    <Col className="content_top_section">
+                      <h1 className="title">
+                        {t(`home.landing.${id}.titulo`)}
+                      </h1>
+                      <p className="parrafo">
+                        {t(`home.landing.${id}.parrafo`)}
+                      </p>
+                    </Col>
+                  </Slug>
+                </div>
+              </Fade>
+              {
+                {
+                  0: <ReusableComponent nameSection="we-are-owl" />,
+                  1: <ReusableComponent nameSection="design" />,
+                  2: <ReusableComponent nameSection="print" />,
+                  3: <ReusableComponent nameSection="logistics" />,
+                  4: <ReusableComponent nameSection="pickandpack" />,
+                  5: <ReusableComponent nameSection="products" />,
+                }[id]
+              }
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </div>
     </div>
   );
