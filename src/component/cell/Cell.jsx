@@ -191,13 +191,51 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         onMouseEnter={() => (!active ? setToggleX(true) : undefined)}
         onMouseLeave={() => (!active ? setToggleX(false) : undefined)}
       >
-        {InActiveState}
-        <div
-          className={`cell_bk_gradiente ${css_gra_hov} ${
-            active ? css_gra : ""
-          }`}
-        />
-        {ActiveState}
+        <Container fluid className="container-size">
+          <Row className="container-size">
+            <Col className="container-size">
+              <div
+                className={`cell_bk_gradiente ${css_gra_hov} ${
+                  active ? css_gra : ""
+                }`}
+              />
+              <div className="inactive-state-height inactive-state-overflow">
+                {trail.map(({ x, height, ...rest }, index) => (
+                  <animated.h1
+                    key={index}
+                    className="titulo-afuera title-height-outside"
+                    style={{
+                      ...rest,
+                      transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
+                      height,
+                      display: !active ? "block" : "none",
+                      color: "#FFFFFF",
+                      pointerEvents: "none",
+                      paddingLeft: "2rem",
+                    }}
+                  >
+                    {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
+                  </animated.h1>
+                ))}
+                <div className="video">
+                  {id === 0 ? (
+                    <video loop autoPlay className="video-cover">
+                      <source
+                        src={videoSectionWeAreOwl}
+                        poster={weareowlposter}
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              </div>
+              {ActiveState}
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );
