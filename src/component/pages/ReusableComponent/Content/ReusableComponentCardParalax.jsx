@@ -55,7 +55,6 @@ export default function ReusableComponentCardParalax({
         <ImageBackgroundComponent
           gradientTop={gradients[0]}
           gradientBottom={gradients[1]}
-          className="img-fluid "
         />
       </animated.div>
 

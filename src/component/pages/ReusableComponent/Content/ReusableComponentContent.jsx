@@ -33,6 +33,7 @@ import ImagePickAndPackContentEight from "../../../../assets/Images/PickAndPack/
 import ImageProductContentOne from "../../../../assets/Images/Product/imageProductContentOne.png";
 
 import i18n from "../../../../shared/i18n";
+import { ReusableComponentCardParalaxResponsive } from "./ReusableComponentCardParalaxResponsive";
 
 export default function ReusableComponentContent({ nameSection }) {
   const owlImages = [ImageWeAreOwlComponentOne, ImageWeAreOwlComponentTwo];
@@ -78,9 +79,10 @@ export default function ReusableComponentContent({ nameSection }) {
               className={`pt-5 ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              <ReusableComponentCardParalaxResponsive picture={owlImages[id]} />
               <p className="content-description">{item.description}</p>
             </Col>
-            <Col md={8} sm={12}>
+            <Col md={8} sm={12} className="icons-responsive">
               <ReusableComponentCardParalax
                 mainPicture={owlImages[id]}
                 sectionName={nameSection}
@@ -206,6 +208,7 @@ export default function ReusableComponentContent({ nameSection }) {
               className={`center-objects ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} content-title`}>{item.title}</h1>
+              content-description
               <p className="content-description text-break">
                 {item.description}
               </p>

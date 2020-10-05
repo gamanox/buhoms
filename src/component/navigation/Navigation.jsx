@@ -39,14 +39,20 @@ const Navigation = React.memo(({ callback }) => {
           />
         </Navbar.Brand>
         <Nav>
-          <Nav.Link className="text-light" onClick={() => changeLanguage("es")}>
+          <Nav.Link
+            className="text-light hidden-sm"
+            onClick={() => changeLanguage("es")}
+          >
             ES
           </Nav.Link>
-          <span className="text-light align-bottom pt-2 pb-2">|</span>
-          <Nav.Link className="text-light" onClick={() => changeLanguage("en")}>
+          <span className="text-light align-bottom pt-2 pb-2 hidden-sm">|</span>
+          <Nav.Link
+            className="text-light hidden-sm"
+            onClick={() => changeLanguage("en")}
+          >
             EN
           </Nav.Link>
-          <div className="d-inline-block align-top mt-1 ml-5 text-light">
+          <div className="size-sm d-inline-block align-top mt-1 ml-5 text-light ">
             <div id="render">
               <HamburgerButton />
             </div>
