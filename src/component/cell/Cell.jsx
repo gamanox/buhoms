@@ -177,10 +177,10 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                   style={{ zIndex: active ? 1000 : -1 }}
                 >
                   <h1 className="inside-title">
-                    {t(`home.landing.${id}.titulo`)}
+                    {id !== 0 ? t(`home.landing.${id}.titulo`) : ""}
                   </h1>
                   <p className="inside-paragraph">
-                    {t(`home.landing.${id}.parrafo`)}
+                    {id !== 0 ? t(`home.landing.${id}.parrafo`) : ""}
                   </p>
                 </div>
               </Slug>
