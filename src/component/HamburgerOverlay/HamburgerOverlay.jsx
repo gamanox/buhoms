@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "./HamburgerOverlay.sass";
 
-export default class HamburgerOverlay extends Component {
-  constructor() {
-    super();
-  }
+class HamburgerOverlay extends Component {
+  constructor() {}
   render() {
     return (
       <div className="hamburgeroverlay">
@@ -32,3 +30,5 @@ export default class HamburgerOverlay extends Component {
     );
   }
 }
+
+export default HamburgerOverlay;
