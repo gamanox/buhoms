@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Row, Col, Carousel } from "react-bootstrap";
-export const ResusableCarouselComponent = ({}) => {
+export const ResusableCarouselComponent = () => {
   return (
     <Row className="icons-carousel-responsive">
       <Col>

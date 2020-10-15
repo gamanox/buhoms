@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Col, Row, Carousel } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import ReusableComponentIcons from "./ReusableComponentIcons";
 import i18n from "../../../../shared/i18n";
 
@@ -29,7 +29,7 @@ import iconThreeProduct from "../../../../assets/Iconography/Product/iconThree.s
 import iconFourProduct from "../../../../assets/Iconography/Product/iconFour.svg";
 import iconFiveProduct from "../../../../assets/Iconography/Product/iconFive.svg";
 import iconSixProduct from "../../../../assets/Iconography/Product/iconSix.svg";
-import ReusableComponent from "../ReusableComponent";
+// import ReusableComponent from "../ReusableComponent";
 import { ResusableCarouselComponent } from "./ResusableCarouselComponent";
 
 function getTitle(nameSection) {
