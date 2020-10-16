@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import $ from "jquery";
 import { Motion, spring, presets } from "react-motion";
 
 class HamburgerButton extends Component {
@@ -13,6 +13,7 @@ class HamburgerButton extends Component {
 
   handleClick() {
     this.setState({ toggle: !this.state.toggle });
+    $(`.hamburgeroverlay, .navbar`).toggleClass(`active`);
   }
   render() {
     const style = {
@@ -20,10 +21,13 @@ class HamburgerButton extends Component {
       cursor: "pointer",
       // disable touch highlighting on devices
       WebkitTapHighlightColor: "rgba(0,0,0,0)",
+      zIndex: 10001
     };
 
     return (
+      
       <svg
+        className="hambu"
         viewBox="0 0 96 96"
         height="1em"
         onClick={this.handleClick.bind(this)}

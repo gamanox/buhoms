@@ -1,27 +1,67 @@
 import React, { Component } from "react";
+import $ from "jquery";
+
 import "./HamburgerOverlay.sass";
 
 class HamburgerOverlay extends Component {
+ 
+
   render() {
     return (
       <div className="hamburgeroverlay">
         <ul>
-          <li>
+          <li
+            onClick={() => {
+              $(`.cell_bk2`).trigger(`click`);
+              $(`.hambu`).trigger(`click`);
+
+            }}
+          >
             <p>Diseño</p>
           </li>
-          <li>
+          <li
+          onClick={() => {
+            $(`.cell_bk3`).trigger(`click`);
+            $(`.hambu`).trigger(`click`);
+
+          }}
+          >
             <p>Impresión</p>
           </li>
-          <li>
+          <li
+          onClick={() => {
+            $(`.cell_bk4`).trigger(`click`);
+            $(`.hambu`).trigger(`click`);
+
+          }}
+          >
             <p>Logística</p>
           </li>
-          <li>
+          <li
+          onClick={() => {
+            $(`.cell_bk5`).trigger(`click`);
+            $(`.hambu`).trigger(`click`);
+
+          }}
+          >
             <p>Pick & Pack</p>
           </li>
-          <li>
+          <li
+          onClick={() => {
+            $(`.cell_bk6`).trigger(`click`);
+            $(`.hambu`).trigger(`click`);
+
+          }}
+          >
             <p>Productos</p>
           </li>
-          <li>
+          <li
+          onClick={() => {
+            $(`.cell_bk1`).trigger(`click`);
+            $(`.hambu`).trigger(`click`);
+
+          }}
+          >
             <p>Somos Búho</p>
           </li>
           <li className="contact-btn">

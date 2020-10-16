@@ -5,6 +5,26 @@
   font-size: 16px
   line-height: 18px
 
+
+.navbar
+  transition: opacity 0.4s
+  .close
+    display: none
+    visibility: hidden
+  &.active
+    z-index: 10001
+    .close
+      display: block
+      visibility: visible 
+      opacity: 1
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 18px 
+    .navbar-brand,a,span
+      opacity: 0
+      visibility: hidden
+    
 .fa-1x
   font-size: 1.5rem
 

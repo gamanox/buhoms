@@ -16,6 +16,11 @@ const Navigation = React.memo(({ callback }) => {
     console.log("changeLanguage: " + lng);
     i18n.changeLanguage(lng);
   };
+  // const close = () => {
+  //   console.log(HamburgerButton);
+  //   HamburgerButton.handleClick();
+  // };
+  
   // eslint-disable-next-line
   const Bars = <FontAwesomeIcon icon={faBars} size="2x" />;
   const CustomNavbar = (
@@ -52,8 +57,14 @@ const Navigation = React.memo(({ callback }) => {
           >
             EN
           </Nav.Link>
+          <Nav.Link
+            className="text-light hidden-sm close"
+          >
+            Cerrar
+          </Nav.Link>
           <div className="size-sm d-inline-block align-top mt-1 ml-5 text-light ">
             <div id="render">
+
               <HamburgerButton />
             </div>
           </div>
