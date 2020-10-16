@@ -101,8 +101,8 @@ export default function ReusableComponentSectionIcons({ nameSection }) {
       fluid
       className="px-5 bg-light spacing-between-sections"
     >
-      <Row className="justify-content-center">
-        <Col lg={{ span: "10", offset: "1" }} sm={{ span: "12" }}>
+      <Row className="">
+        <Col lg={{ span: "8", offset: "2" }} sm={{ span: "12" }}>
           <h1 className="section-two-title">{getTitle(nameSection)}</h1>
           <p className="section-two-description">
             {getDescription(nameSection)}

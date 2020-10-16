@@ -38,17 +38,40 @@ function getDescription(nameSection) {
       break;
   }
 }
+
+function getDescriptionTwo(nameSection) {
+  switch (nameSection) {
+    case "we-are-owl":
+      return "";
+    case "design":
+      return "";
+    case "print":
+      return i18n.t("print.header.descriptiontwo");
+    case "logistics":
+      return "";
+    case "pickandpack":
+      return "";
+    case "products":
+      return "";
+    default:
+      break;
+  }
+}
+
 export default function ReusableComponentHeader({ nameSection }) {
   return (
     <Row
-      className="px-5 justify-content-center spacing-between-sections"
+      className="px-5  spacing-between-sections"
       style={{ background: "rgba(15, 16, 18, 1)" }}
     >
-      <Col lg={{ span: "10" }} sm={{ span: "12" }} className="py-5">
+      <Col lg={{ span: "8", offset: "2" }} sm={{ span: "12" }} className="py-5">
         <h1 className={`title ${nameSection}`}>{getTitle(nameSection)}</h1>
         <p className="section-one-description text-justify">
           {getDescription(nameSection)}
         </p>
+        <p className="section-two-descriptiontwo">
+            {getDescriptionTwo(nameSection)}
+          </p>
       </Col>
     </Row>
   );

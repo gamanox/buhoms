@@ -59,6 +59,7 @@ h1.title
 
     .print
         @include define-text-color("print")
+        margin-bottom: 40px
 
     .logistics
         @include define-text-color("logistics")
@@ -126,6 +127,13 @@ h1.title
     font-size: 18px
     line-height: 24px
     text-align: center
+.section-two-descriptiontwo
+    font-family: $font-body
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    text-align: left
 
 .background-color-section-two
     background: $background-color-section-two
@@ -140,7 +148,25 @@ h1.title
     font-weight: 600
     font-size: 50px
     line-height: 55px
-    color: $color-text-we-are-owl !important
+    color: $color-text-we-are-owl
+    &.we-are-owl
+        @include define-text-color("we-are-owl")
+
+    &.design
+        @include define-text-color("design")
+
+    &.print
+        @include define-text-color("print")
+        margin-bottom: 40px
+
+    &.logistics
+        @include define-text-color("logistics")
+
+    &.pickandpack
+        @include define-text-color("pickandpack")
+
+    &.products
+        @include define-text-color("products")
 
 .content-description
     font-family: "Graphik"
@@ -163,10 +189,10 @@ h1.title
     font-family: "Graphik"
     font-style: normal
     font-weight: 500
-    font-size: 16px
+    font-size: 16px !important
     line-height: 18px
     text-align: center
-    color: #FFFFFF
+    color: #FFFFFF !important
 
 .transform-objects
     transform: translate(-50%, -50%)

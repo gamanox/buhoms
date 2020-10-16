@@ -172,16 +172,18 @@
   },
   "print": {
     "header": {
-      "title": "Materializando la inspiración.",
-      "description": "Elegimos sólo los mejores materiales y sistemas de impresión para lograr un equilibrio óptimo entre belleza y utilidad."
+      "title": "Amplifique su comunicación con el poder de la impresión.",
+      "description": "Amplíe el poder de su marca y comunicación con nuestros servicios de impresión, entrega rápida y fulfillment.",
+      "descriptiontwo": "Ofrecemos servicios de  impresión de alto impacto, de volumen alto o sobre demanda con la plataforma más diversificada y completa para satisfacer las necesidades de impresión y empaque a cualquier escala."
     },
     "sub-header": {
       "title": "Nuestro objetivo:",
       "description": "Aumentar la visibilidad y resultados de negocio de cada campaña, así optimizamos la inversión de nuestros socios comerciales. Nuestro trabajo es producto de la colaboración estrecha; escuchamos y organizamos las necesidades específicas de cada marca, diseñamos sus objetivos a la medida y producimos soluciones de comunicación únicas."
+      
     },
     "section-one": {
-      "title": "Experiencia a tu servicio",
-      "description": "Te orientamos en la selección de materiales, sustratos y acabados según el requerimiento de cada proyecto; brindándote la mejor calidad y tendencias del mercado en las siguientes técnicas de impresión:"
+      "title": "No somos cualquier proveedor típico de servicio de impresión.",
+      "description": "Atendemos necesidades únicas con la red de infraestructura más completa en el país, hemos invertido en desarrollar estas capacidades para ayudar a nuestros clientes atender sus necesidades superando sus expectativas en sus desafíos de ejecución en materiales impresos y empaques."
     },
     "section-two": [
       {
@@ -217,29 +219,26 @@
     ],
     "content": [
       {
-        "title": "Offset",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Nuestro objetivo",
+        "description": "Aumentar la visibilidad y resultados de negocio de cada campaña, así optimizamos la inversión de nuestros socios comerciales. Nuestro trabajo es producto de la colaboración estrecha; escuchamos y organizamos las necesidades específicas de cada marca, diseñamos sus objetivos a la medida y producimos soluciones de comunicación únicas."
       },
       {
-        "title": "Rotativa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Experiencia de expertos",
+        "description": "Te orientamos en la selección de materiales, sustratos y acabados según el requerimiento de cada proyecto; brindándote la mejor calidad y tendencias del mercado."
       },
       {
-        "title": "Gran formato",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Go-To- Market",
+        "description": "Obtenga en tiempos sorprendentes sus materiales impresos de la mas alta calidad, se pueden producir, organizar y enviar miles de materiales impresos variables a distintos destinos en 3 días hábiles."
       },
       {
-        "title": "Offset digital",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Alta capacidad, disponibilidad, y precisión ",
+        "description": "Atendemos más de 1,300 pedidos de impresión y 3000 envíos por mes  en nuestras instalaciones de producción e impresión."
       },
       {
-        "title": "Cama Plana",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      {
-        "title": "Acabados",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "",
+        "description": "Tenemos una tasa de precisión líder en la industria del 99.8% sin errores. Aumentamos el volumen en un 30% año tras año debido a nuestra capacidad para cumplir o superar constantemente las expectativas de nuestros clientes con trabajos de impresión de gran volumen o sobre demanda  y  con alta exigencia de calidad."
       }
+      
     ]
   },
   "logistics": {

@@ -12,16 +12,23 @@ const Print = () => {
     <section>
       <Container fluid className="m-0 p-0 bg-dark">
         <Row className="justify-content-md-center">
-          <Col md={{ span: 10, offset: 1 }}>
+          <Col md={{ span: 8, offset: 2 }}>
             <h1 className="print-title-header pt-5">
               {i18n.t("print.header.title")}
             </h1>
           </Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col md={{ span: 10, offset: 1 }}>
+          <Col md={{ span: 8, offset: 2 }}>
             <p className="print-description-header">
               {i18n.t("print.header.description")}
+            </p>
+          </Col>
+        </Row>
+        <Row className="justify-content-md-center">
+          <Col md={{ span: 10, offset: 1 }}>
+            <p className="sub-header-description">
+              {i18n.t("print.sub-header.description")}
             </p>
           </Col>
         </Row>

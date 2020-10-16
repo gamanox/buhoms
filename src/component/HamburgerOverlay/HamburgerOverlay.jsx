@@ -24,7 +24,17 @@ class HamburgerOverlay extends Component {
           <li>
             <p>Somos Búho</p>
           </li>
+          <li className="contact-btn">
+            <p>Contáctanos</p>
+          </li>
+          <li className="lang-btn lang-es active">
+            <p>ES</p>
+          </li>
+          <li className="lang-btn lang-en">
+            <p>EN</p>
+          </li>
         </ul>
+        
       </div>
     );
   }

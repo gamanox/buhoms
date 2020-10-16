@@ -11,7 +11,6 @@ import ImageDesignContentFour from "../../../../assets/Images/Design/imageDesign
 import ImageDesignContentFive from "../../../../assets/Images/Design/imageDesignContentFive.png";
 
 import ImagePrintContentOne from "../../../../assets/Images/Print/imagePrintContentOne.png";
-import ImagePrintContentTwo from "../../../../assets/Images/Print/imagePrintContentTwo.png";
 import ImagePrintContentThree from "../../../../assets/Images/Print/imagePrintContentThree.png";
 import ImagePrintContentFour from "../../../../assets/Images/Print/imagePrintContentFour.png";
 import ImagePrintContentFive from "../../../../assets/Images/Print/imagePrintContentFive.png";
@@ -46,10 +45,9 @@ export default function ReusableComponentContent({ nameSection }) {
   ];
   const printImages = [
     ImagePrintContentOne,
-    ImagePrintContentTwo,
+    ImagePrintContentFive,
     ImagePrintContentThree,
     ImagePrintContentFour,
-    ImagePrintContentFive,
     ImagePrintContentSix,
   ];
   const logisticsImages = [
@@ -119,7 +117,7 @@ export default function ReusableComponentContent({ nameSection }) {
       </Row>
     ));
   const print = i18n
-    .t("print.content", { returnObjects: true })
+    .t("print.content", { returnObjects: true, interpolation: {escapeValue: false} } )
     .map((item, id) => (
       <Row className="bg-light justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
@@ -141,6 +139,7 @@ export default function ReusableComponentContent({ nameSection }) {
               />
             </Col>
           </Row>
+          
         </Col>
       </Row>
     ));
