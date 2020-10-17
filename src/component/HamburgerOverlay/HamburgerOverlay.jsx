@@ -14,7 +14,7 @@ class HamburgerOverlay extends Component {
               $(`.hambu`).trigger(`click`);
             }}
           >
-            <p className="design">Diseño</p>
+            <p className="bk2-design">Diseño</p>
           </li>
           <li
             onClick={() => {
@@ -22,7 +22,7 @@ class HamburgerOverlay extends Component {
               $(`.hambu`).trigger(`click`);
             }}
           >
-            <p className="print">Impresión</p>
+            <p className="bk3-print">Impresión</p>
           </li>
           <li
             onClick={() => {
@@ -30,23 +30,16 @@ class HamburgerOverlay extends Component {
               $(`.hambu`).trigger(`click`);
             }}
           >
-            <p className="logistic">Logística</p>
+            <p className="bk4-logistics">Logística</p>
           </li>
-          <li
-            onClick={() => {
-              $(`.cell_bk5`).trigger(`click`);
-              $(`.hambu`).trigger(`click`);
-            }}
-          >
-            <p className="pickandpack">Pick & Pack</p>
-          </li>
+
           <li
             onClick={() => {
               $(`.cell_bk6`).trigger(`click`);
               $(`.hambu`).trigger(`click`);
             }}
           >
-            <p className="products">Productos</p>
+            <p className="bk6-products">Productos</p>
           </li>
           <li
             onClick={() => {
@@ -54,7 +47,7 @@ class HamburgerOverlay extends Component {
               $(`.hambu`).trigger(`click`);
             }}
           >
-            <p className="we-are-owl">Somos Búho</p>
+            <p className="bk1-we-are-owl">Somos Búho</p>
           </li>
           <li className="contact-btn">
             <p>Contáctanos</p>

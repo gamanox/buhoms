@@ -117,7 +117,10 @@ export default function ReusableComponentContent({ nameSection }) {
       </Row>
     ));
   const print = i18n
-    .t("print.content", { returnObjects: true, interpolation: {escapeValue: false} } )
+    .t("print.content", {
+      returnObjects: true,
+      interpolation: { escapeValue: false },
+    })
     .map((item, id) => (
       <Row className="bg-light justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
@@ -139,7 +142,6 @@ export default function ReusableComponentContent({ nameSection }) {
               />
             </Col>
           </Row>
-          
         </Col>
       </Row>
     ));
@@ -195,7 +197,7 @@ export default function ReusableComponentContent({ nameSection }) {
         </Col>
       </Row>
     ));
-  const product = i18n
+  const products = i18n
     .t("products.content", { returnObjects: true })
     .map((item, id) => (
       <Row className="bg-light justify-content-md-center" key={id}>
@@ -204,10 +206,9 @@ export default function ReusableComponentContent({ nameSection }) {
             <Col
               sm={12}
               md={4}
-              className={`center-objects ${id % 2 ? `order-last` : ``}`}
+              className={`center-objects pt-5 ${id % 2 ? `order-last` : ``}`}
             >
               <h1 className={`${nameSection} content-title`}>{item.title}</h1>
-              content-description
               <p className="content-description text-break">
                 {item.description}
               </p>
@@ -223,7 +224,7 @@ export default function ReusableComponentContent({ nameSection }) {
       </Row>
     ));
   return (
-    <div className="px-5 bg-light">
+    <div className="px-5 pt-5 bg-light">
       {
         {
           "we-are-owl": owl,
@@ -231,7 +232,7 @@ export default function ReusableComponentContent({ nameSection }) {
           print: print,
           logistics: logistics,
           pickandpack: pickAndPack,
-          product: product,
+          products: products,
         }[nameSection]
       }
     </div>

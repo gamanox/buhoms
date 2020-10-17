@@ -237,7 +237,6 @@
         "title": "",
         "description": "Tenemos una tasa de precisión líder en la industria del 99.8% sin errores. Aumentamos el volumen en un 30% año tras año debido a nuestra capacidad para cumplir o superar constantemente las expectativas de nuestros clientes con trabajos de impresión de gran volumen o sobre demanda  y  con alta exigencia de calidad."
       }
-      
     ]
   },
   "logistics": {
@@ -325,7 +324,7 @@
       },
       {
         "icon": {
-          "description": "Exterior"
+          "description": "Comunicación corporativa"
         }
       },
       {
@@ -335,44 +334,26 @@
       },
       {
         "icon": {
-          "description": "Editorial"
-        }
-      },
-      {
-        "icon": {
-          "description": "Promocionales"
-        }
-      },
-      {
-        "icon": {
-          "description": "Corporativo"
+          "description": "Campaña"
         }
       }
     ],
     "content": [
       {
         "title": "Puntos de venta",
-        "description": "Hemos desarrollado nuestro propio software de control y seguimiento, que permite a nuestros clientes monitorear en línea cada una de las etapas del proceso de entrega."
+        "description": "Danglers | Stoppers  | Banners  | Poster | Floor graphic  | Aéreos  | Exhibidores."
       },
       {
-        "title": "Exterior",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Comunicación corporativa",
+        "description": "Tarjetas de presentación | Brochures | Folleto | Folders | Agendas."
       },
       {
-        "title": "Industrial",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Industria",
+        "description": "Empaque | Señalizaciones | Etiquetas especializadas."
       },
       {
-        "title": "Editorial",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      {
-        "title": "Promocionales",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-      },
-      {
-        "title": "Corporativo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni,am, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Campañas",
+        "description": "Microperforado | Lona | Vinil | Stickers | Volantes | Dípticos."
       }
     ]
   },

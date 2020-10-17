@@ -11,14 +11,14 @@ import ReusableComponent from "../pages/ReusableComponent/ReusableComponent";
 import videoSectionDesign from "../../assets/video/DESIGN.mov";
 import videoSectionPrint from "../../assets/video/PRINT.mp4";
 import videoSectionLogistics from "../../assets/video/LOGISTICA.mp4";
-import videoSectionPickandpack from "../../assets/video/PACKING1.mp4";
+// import videoSectionPickandpack from "../../assets/video/PACKING1.mp4";
 import videoSectionProducts from "../../assets/video/PACKING2.mp4";
 import videoSectionWeAreOwl from "../../assets/video/videoSectionWeAreOwl.mp4";
 import weareowlposter from "../../assets/Images/Buho_somos02.svg";
 import designposter from "../../assets/Images/Buho_DesignBck.svg";
 import printposter from "../../assets/Images/Buho_PrintBck.svg";
 import logisticsposter from "../../assets/Images/Buho_LogisticsBck1.svg";
-import pickpackposter from "../../assets/Images/Buho_PickBck.svg";
+// import pickpackposter from "../../assets/Images/Buho_PickBck.svg";
 import productsposter from "../../assets/Images/Productos.svg";
 
 const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
@@ -75,7 +75,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                     1: designposter,
                     2: printposter,
                     3: logisticsposter,
-                    4: pickpackposter,
+                    // 4: pickpackposter,
                     5: productsposter,
                   }[id]
                 }
@@ -87,7 +87,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                       1: videoSectionDesign,
                       2: videoSectionPrint,
                       3: videoSectionLogistics,
-                      4: videoSectionPickandpack,
+                      // 4: videoSectionPickandpack,
                       5: videoSectionProducts,
                     }[id]
                   }
@@ -108,7 +108,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
               1: <ReusableComponent nameSection="design" />,
               2: <ReusableComponent nameSection="print" />,
               3: <ReusableComponent nameSection="logistics" />,
-              4: <ReusableComponent nameSection="pickandpack" />,
+              // 4: <ReusableComponent nameSection="pickandpack" />,
               5: <ReusableComponent nameSection="products" />,
             }[id]
           }
@@ -200,7 +200,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                       1: designposter,
                       2: printposter,
                       3: logisticsposter,
-                      4: pickpackposter,
+                      // 4: pickpackposter,
                       5: productsposter,
                     }[id]
                   }
@@ -212,7 +212,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                         1: videoSectionDesign,
                         2: videoSectionPrint,
                         3: videoSectionLogistics,
-                        4: videoSectionPickandpack,
+                        // 4: videoSectionPickandpack,
                         5: videoSectionProducts,
                       }[id]
                     }
@@ -234,7 +234,7 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                   1: <ReusableComponent nameSection="design" />,
                   2: <ReusableComponent nameSection="print" />,
                   3: <ReusableComponent nameSection="logistics" />,
-                  4: <ReusableComponent nameSection="pickandpack" />,
+                  // 4: <ReusableComponent nameSection="pickandpack" />,
                   5: <ReusableComponent nameSection="products" />,
                 }[id]
               }

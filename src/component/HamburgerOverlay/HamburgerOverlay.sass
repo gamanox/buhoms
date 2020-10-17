@@ -1,24 +1,24 @@
-$color-text-we-are-owl: #00FF00
-$color-text-design: #00FFEA
-$color-text-print: #FF0054
-$color-text-logistics: #FFF000
-$color-text-pickandpack: #A31BFF
-$color-text-products: #0047FF
+$bk1-color: #00FF00
+$bk2-color: #00FFEA
+$bk3-color: #FF0054
+$bk4-color: #FFF000
+$bk5-color: #A31BFF
+$bk6-color: #0047FF
 
 @mixin define-text-color($section)
 
     @if $section == "we-are-owl"
-        color: $color-text-we-are-owl
+        color: $bk1-color
     @else if $section == "design"
-        color: $color-text-design
+        color: $bk2-color
     @else if $section == "print"
-        color: $color-text-print
+        color: $bk3-color
     @else if $section == "logistics"
-        color: $color-text-logistics
+        color: $bk4-color
     @else if $section == "pickandpack"
-        color: $color-text-pickandpack
+        color: $bk5-color
     @else if $section == "products"
-        color: $color-text-products
+        color: $bk6-color
     @else
         @error "Unknown section #{$section}."
 
@@ -43,25 +43,6 @@ $color-text-products: #0047FF
         padding-top: 15vh
         li
             cursor: pointer
-            &:hover
-                p
-                    &.we-are-owl
-                        @include define-text-color("we-are-owl")
-
-                    &.design
-                        @include define-text-color("design")
-
-                    &.print
-                        @include define-text-color("print")
-
-                    &.logistics
-                        @include define-text-color("logistics")
-
-                    &.pickandpack
-                        @include define-text-color("pickandpack")
-
-                    &.products
-                        @include define-text-color("products")
             p
                 transition: all 0.4s
                 color: white
@@ -71,6 +52,26 @@ $color-text-products: #0047FF
                 font-size: 8.5vh
                 line-height: 10vh
                 margin-bottom: 0
+            &:hover
+                p
+                    &.bk1-we-are-owl
+                        @include define-text-color("we-are-owl")
+
+                    &.bk2-design
+                        @include define-text-color("design")
+
+                    &.bk3-print
+                        @include define-text-color("print")
+
+                    &.bk4-logistics
+                        @include define-text-color("logistics")
+
+                    &.bk5-pickandpack
+                        @include define-text-color("pickandpack")
+
+                    &.bk6-products
+                        @include define-text-color("products")
+            
     .contact-btn
         margin-top: 4.2vh
         border: 1px solid white
@@ -78,6 +79,8 @@ $color-text-products: #0047FF
         &:hover
             transition: border 0.4s
             border: 1px solid #FF0054
+            p
+                color: #FF0054
         p
             font-style: normal
             font-weight: 500
@@ -101,5 +104,3 @@ $color-text-products: #0047FF
             font-size: 2.6vh
             line-height: 2.8vh
             text-decoration: underline
-
-    

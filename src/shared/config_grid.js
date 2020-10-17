@@ -31,14 +31,14 @@ export default [
     css_gra_hov: "cell_bk4_gradiente",
     isOtherDesing: true,
   },
-  {
-    id: 4,
-    width: 900,
-    css: "cell_bk5",
-    css_gra: "cell_bk5_grad bottom-background",
-    css_gra_hov: "cell_bk5_gradiente",
-    isOtherDesing: true,
-  },
+  // {
+  //   id: 4,
+  //   width: 900,
+  //   css: "cell_bk5",
+  //   css_gra: "cell_bk5_grad bottom-background",
+  //   css_gra_hov: "cell_bk5_gradiente",
+  //   isOtherDesing: true,
+  // },
   {
     id: 5,
     width: 900,

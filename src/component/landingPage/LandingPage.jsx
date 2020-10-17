@@ -42,6 +42,7 @@ const App = () => {
   const handleClickRight = () => {
     setTappedRight(true);
     if (tappedRight) {
+      console.log("primer click");
       $(`#right-button`).hide();
       $(`.cell_bk6_gradiente`)[0].scrollIntoView({
         behavior: "smooth",
@@ -49,10 +50,16 @@ const App = () => {
       });
       setTappedLeft(true);
     } else {
-      $(`.cell_bk5_gradiente`)[0].scrollIntoView({
+      console.log("segundo click");
+      $(`#right-button`).hide();
+      $(`.cell_bk6_gradiente`)[0].scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
+      // $(`.cell_bk5_gradiente`)[0].scrollIntoView({
+      //   behavior: "smooth",
+      //   block: "start",
+      // });
       setTappedLeft(false);
       $(`#left-button`).show();
     }
