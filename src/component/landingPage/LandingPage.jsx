@@ -120,14 +120,15 @@ const App = () => {
                 if (window.innerWidth <= 480) {
                   return window.innerWidth;
                 } else {
-                  var width = window.innerWidth / 3;
-                  var thirdScreen = width * 2;
+                  var width = window.innerWidth / 4;
+                  // var thirdScreen = width * 2;
                   if (0 >= d.id) {
-                    return thirdScreen;
+                    return window.innerWidth;
                   } else {
                     return width;
                   }
                 }
+                // return window.innerWidth;
               }}
               // Can be a fixed value or an individual data accessor
               heights={() => {

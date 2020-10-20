@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import ReusableComponent from "../pages/ReusableComponent/ReusableComponent";
-import videoSectionDesign from "../../assets/video/DESIGN.mov";
+import videoSectionDesign from "../../assets/video/DESIGN.mp4";
 import videoSectionPrint from "../../assets/video/PRINT.mp4";
 import videoSectionLogistics from "../../assets/video/LOGISTICA.mp4";
 // import videoSectionPickandpack from "../../assets/video/PACKING1.mp4";
@@ -67,6 +67,8 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
             <Col id="header" className="video container-size">
               <video
                 id="background-video"
+                muted
+                playsinline
                 loop
                 autoPlay
                 poster={
