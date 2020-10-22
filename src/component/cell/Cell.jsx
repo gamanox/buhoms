@@ -178,6 +178,9 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
             {id !== 0
               ? t(`home.landing.${id}.titulo_afuera`)
               : t(`home.landing.${id}.titulo_afuera`)}
+            <span className="title-description">
+              {id !== 0 ? t(`home.landing.${id}.parrafo`) : ""}
+            </span>
           </animated.h1>
         ))}
       </div>
@@ -246,6 +249,11 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
                   />
                   Your browser does not support the video tag.
                 </video>
+                <div
+                  className={`cell_bk_gradiente ${css_gra_hov} ${
+                    active ? css_gra : ""
+                  } `}
+                />
                 <p className="text-video centered text-light text-center d-sm-none d-md-block">
                   Explore
                   <br />

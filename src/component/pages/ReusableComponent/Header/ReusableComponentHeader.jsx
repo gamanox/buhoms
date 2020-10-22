@@ -62,7 +62,8 @@ export default function ReusableComponentHeader({ nameSection }) {
   return (
     <Row
       className="px-5  spacing-between-sections"
-      style={{ background: "rgba(15, 16, 18, 1)" }}
+      // style={{ background: "rgba(15, 16, 18, 1)" }}
+      style={{ background: "#000000" }}
     >
       <Col lg={{ span: "8", offset: "2" }} sm={{ span: "12" }} className="py-5">
         <h1 className={`title ${nameSection}`}>{getTitle(nameSection)}</h1>
@@ -70,8 +71,8 @@ export default function ReusableComponentHeader({ nameSection }) {
           {getDescription(nameSection)}
         </p>
         <p className="section-two-descriptiontwo">
-            {getDescriptionTwo(nameSection)}
-          </p>
+          {getDescriptionTwo(nameSection)}
+        </p>
       </Col>
     </Row>
   );

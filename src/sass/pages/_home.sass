@@ -19,7 +19,7 @@ $black: #000000
     font-weight: 500
     font-size: 70px
     line-height: 70px
-
+    
 .content_top_section
     position: absolute
     top: 30%
@@ -61,6 +61,27 @@ $black: #000000
     background: nth(nth($color-stops, 1), 1)
     background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
     background: linear-gradient($direction, $color-stops)
+
+.cell
+    .titulo-afuera
+
+        .title-description
+            transition: all 0.4s
+            display: block
+            font-family: "Graphik"
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 125%
+            opacity: 0
+            transform: translate(60px, 0)
+            display: block
+    &:hover
+        .titulo-afuera
+
+            .title-description
+                opacity: 1
+                transform: translate(0,0)
 
 .cell_bk_gradiente
     width: 100%
