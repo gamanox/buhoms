@@ -39,7 +39,7 @@ const Products = () => {
             </p>
           </Col>
         </Row>
-        <Row className="bg-light justify-content-md-center pt-5">
+        <Row className=" justify-content-md-center pt-5">
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
               <Col md="4" className="mt-5">
@@ -61,7 +61,7 @@ const Products = () => {
             </Row>
           </Col>
         </Row>
-        <Row className="bg-light justify-content-md-center pt-5">
+        <Row className=" justify-content-md-center pt-5">
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
               <Col md="8" className="align-middle">
@@ -78,7 +78,7 @@ const Products = () => {
             </Row>
           </Col>
         </Row>
-        <Row className="bg-light justify-content-md-center pt-5">
+        <Row className=" justify-content-md-center pt-5">
           <Col md={{ span: 10, offset: 1 }}>
             <Row className="mt-5">
               <Col md="4">
@@ -96,7 +96,7 @@ const Products = () => {
             </Row>
           </Col>
         </Row>
-        <Row className="bg-light justify-content-md-center pt-5">
+        <Row className=" justify-content-md-center pt-5">
           <Col md={{ span: 10, offset: 1 }}>
             <Row className="mt-5">
               <Col md="8" className="align-middle">
@@ -114,7 +114,7 @@ const Products = () => {
             </Row>
           </Col>
         </Row>
-        <Row className="bg-light justify-content-md-center pt-5">
+        <Row className=" justify-content-md-center pt-5">
           <Col md={{ span: 10, offset: 1 }}>
             <Row className="mt-5">
               <Col md="4">

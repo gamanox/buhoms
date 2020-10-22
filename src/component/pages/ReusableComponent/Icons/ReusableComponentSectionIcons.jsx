@@ -99,7 +99,7 @@ export default function ReusableComponentSectionIcons({ nameSection }) {
     <Container
       id="section-background"
       fluid
-      className="px-5 bg-light spacing-between-sections"
+      className="px-5 spacing-between-sections"
     >
       <Row className="">
         <Col lg={{ span: "8", offset: "2" }} sm={{ span: "12" }}>

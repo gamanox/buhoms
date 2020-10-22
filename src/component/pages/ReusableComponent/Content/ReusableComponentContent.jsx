@@ -68,7 +68,7 @@ export default function ReusableComponentContent({ nameSection }) {
   const owl = i18n
     .t("we-are-owl.content", { returnObjects: true })
     .map((item, id) => (
-      <Row className="bg-light justify-content-center" key={id}>
+      <Row className=" justify-content-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
@@ -93,7 +93,7 @@ export default function ReusableComponentContent({ nameSection }) {
   const design = i18n
     .t("design.content", { returnObjects: true })
     .map((item, id) => (
-      <Row className="bg-light justify-content-md-center" key={id}>
+      <Row className=" justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
@@ -122,7 +122,7 @@ export default function ReusableComponentContent({ nameSection }) {
       interpolation: { escapeValue: false },
     })
     .map((item, id) => (
-      <Row className="bg-light justify-content-md-center" key={id}>
+      <Row className=" justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
@@ -148,7 +148,7 @@ export default function ReusableComponentContent({ nameSection }) {
   const logistics = i18n
     .t("logistics.content", { returnObjects: true })
     .map((item, id) => (
-      <Row className="bg-light justify-content-md-center" key={id}>
+      <Row className=" justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
@@ -174,7 +174,7 @@ export default function ReusableComponentContent({ nameSection }) {
   const pickAndPack = i18n
     .t("pickandpack.content", { returnObjects: true })
     .map((item, id) => (
-      <Row className="bg-light justify-content-md-center" key={id}>
+      <Row className=" justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
@@ -200,7 +200,7 @@ export default function ReusableComponentContent({ nameSection }) {
   const products = i18n
     .t("products.content", { returnObjects: true })
     .map((item, id) => (
-      <Row className="bg-light justify-content-md-center" key={id}>
+      <Row className=" justify-content-md-center" key={id}>
         <Col md={{ span: 10, offset: 1 }} sm={12}>
           <Row>
             <Col
@@ -224,7 +224,7 @@ export default function ReusableComponentContent({ nameSection }) {
       </Row>
     ));
   return (
-    <div className="px-5 pt-5 bg-light">
+    <div className="px-5 pt-5 section-content-container bg-light">
       {
         {
           "we-are-owl": owl,
