@@ -137,7 +137,28 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
           ) : (
             ""
           )}
+          <div
+            className={`cell_bk_gradiente ${css_gra_hov} ${
+              active ? css_gra : ""
+            } `}
+            style={{ display: `${active ? `none` : `inline`}` }}
+          />
+          {/* {trail.map(({x,height, ...rest}, index) => (
+            <h1
+            className="titulo-afuera title-height-outside"
+              style={{
+              color: "#FFFFFF",
+              pointerEvents: "none",
+              paddingLeft: "2rem",
+              zIndex: 1000,
+              }}
+            >
+              {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : t(`home.landing.${id}.titulo_afuera`)}
+            </h1>
+            
+          ))} */}
         </div>
+
         {trail.map(({ x, height, ...rest }, index) => (
           <animated.h1
             key={index}
@@ -147,13 +168,16 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
               transform: x.interpolate((x) => `translate3d(0,${x}%,0)`),
               height,
               display: !active ? "block" : "none",
+              // display: "none",
               color: "#FFFFFF",
               pointerEvents: "none",
               paddingLeft: "2rem",
               zIndex: 1000,
             }}
           >
-            {id !== 0 ? t(`home.landing.${id}.titulo_afuera`) : ""}
+            {id !== 0
+              ? t(`home.landing.${id}.titulo_afuera`)
+              : t(`home.landing.${id}.titulo_afuera`)}
           </animated.h1>
         ))}
       </div>
@@ -268,13 +292,8 @@ const Cell = ({ id, width, toggle, css, active, css_gra, css_gra_hov }) => {
         <Container fluid className="container-size">
           <Row className="container-size">
             <Col className="container-size">
-              <div
-                className={`cell_bk_gradiente ${css_gra_hov} ${
-                  active ? css_gra : ""
-                } `}
-                style={{ display: `${active ? `none` : `inline`}` }}
-              />
               <Outside />
+
               <Inside />
             </Col>
           </Row>
