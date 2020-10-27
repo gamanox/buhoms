@@ -30,7 +30,6 @@ import ImagePickAndPackContentSeven from "../../../../assets/Images/PickAndPack/
 import ImagePickAndPackContentEight from "../../../../assets/Images/PickAndPack/imagePickAndPackContentEight.png";
 
 import ImageProductContentOne from "../../../../assets/Images/Product/imageProductContentOne.png";
-
 import i18n from "../../../../shared/i18n";
 import { ReusableComponentCardParalaxResponsive } from "./ReusableComponentCardParalaxResponsive";
 

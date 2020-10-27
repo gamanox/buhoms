@@ -1,7 +1,7 @@
 import React from "react";
-
 import { useSpring, animated, config } from "react-spring";
 import { Container, Image } from "react-bootstrap";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { ImageBackgroundComponent } from "../../../ImageBackgroundComponent/ImageBackgroundComponent";
 function gradientColor(sectionName) {
   switch (sectionName) {
@@ -31,6 +31,7 @@ export default function ReusableComponentCardParalax({
     x - window.innerWidth / 2,
     y - window.innerHeight / 2,
   ];
+
   // eslint-disable-next-line
   const mainPictureTransformation = (x, y) =>
     `translate3d(${x / 20 + 200}px,${y / 10}px,0)`;
@@ -42,29 +43,39 @@ export default function ReusableComponentCardParalax({
     xy: [0, 0],
     config: config.slow,
   }));
-  return (
-    <Container
-      onMouseMove={({ clientX: x, clientY: y }) =>
-        set({ xy: calculation(x, y) })
-      }
-      className="container-responsive h-container"
-    >
-      <animated.div
-        style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
-      >
-        <ImageBackgroundComponent
-          gradientTop={gradients[0]}
-          gradientBottom={gradients[1]}
-        />
-      </animated.div>
 
-      <animated.div
-        style={{
-          transform: props.xy.interpolate(backgroundImageTransformation),
-        }}
+  return (
+    <Parallax ref={(ref) => (React.useRef.parallax = ref)} pages={3}>
+      <Container
+        onMouseMove={({ clientX: x, clientY: y }) =>
+          set({ xy: calculation(x, y) })
+        }
+        className="container-responsive h-container"
       >
-        <Image src={mainPicture} className="img-fluid " />
-      </animated.div>
-    </Container>
+        <animated.div
+          style={{ transform: props.xy.interpolate(mainPictureTransformation) }}
+        >
+          <ImageBackgroundComponent
+            gradientTop={gradients[0]}
+            gradientBottom={gradients[1]}
+          />
+        </animated.div>
+
+        <animated.div
+          style={{
+            transform: props.xy.interpolate(backgroundImageTransformation),
+          }}
+        >
+          {/* <Image src={mainPicture} className="img-fluid " /> */}
+          <ParallaxLayer
+            offset={1.3}
+            speed={-0.3}
+            style={{ pointerEvents: "none" }}
+          >
+            <Image src={mainPicture} className="img-fluid " />
+          </ParallaxLayer>
+        </animated.div>
+      </Container>
+    </Parallax>
   );
 }

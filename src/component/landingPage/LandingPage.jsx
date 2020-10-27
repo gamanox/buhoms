@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Navigation from "../navigation/Navigation";
 import HamburgerOverlay from "../HamburgerOverlay/HamburgerOverlay";
-
 import $ from "jquery";
 import data from "../../shared/config_grid";
 import "antd/dist/antd.css";
